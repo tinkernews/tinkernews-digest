@@ -2,7 +2,7 @@
 
 Curated DIY electronics builds — open source digest of the TinkerNews newsletter
 
-**Stats:** 8 issues · 70 builds
+**Stats:** 9 issues · 85 builds
 
 ## Issues
 
@@ -15,4 +15,5 @@ Curated DIY electronics builds — open source digest of the TinkerNews newslett
 | 45 | 2025-11-03 | Innovative Maker Projects: From Mini Pianos to AI Assistants | 8 | [45-innovative-maker-projects-from-mini-pianos-to-ai-assistants.md](issues/45-innovative-maker-projects-from-mini-pianos-to-ai-assistants.md) |
 | 50 | 2025-12-08 | ESP32 Innovations: Clock, Weather, and Motion Projects | 4 | [50-esp32-innovations-clock-weather-and-motion-projects.md](issues/50-esp32-innovations-clock-weather-and-motion-projects.md) |
 | 53 | 2026-09-15 | Smarter, Safer, More Local Builds | 14 | [53-smarter-safer-more-local-builds.md](issues/53-smarter-safer-more-local-builds.md) |
+| 54 | 2026-09-21 | Practical Builds for Smarter Spaces | 15 | [54-practical-builds-for-smarter-spaces.md](issues/54-practical-builds-for-smarter-spaces.md) |
 | 55 | 2026-09-28 | Buildable Bots, Smart Sensors, and Tiny Graphics | 14 | [55-buildable-bots-smart-sensors-and-tiny-graphics.md](issues/55-buildable-bots-smart-sensors-and-tiny-graphics.md) |
