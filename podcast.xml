@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+<channel>
+<title>TinkerNews — DIY Electronics Weekly</title>
+<link>https://www.tinkernews.com</link>
+<description>Free weekly DIY electronics builds — ESP32, Arduino, Raspberry Pi, robotics, IoT.</description>
+<language>en</language>
+<itunes:image href="https://www.tinkernews.com/og-image.jpg"/>
+<itunes:author>TinkerNews</itunes:author>
+<itunes:category text="Technology"/>
+<item>
+<title>TinkerNews #55: Buildable Bots, Smart Sensors, and Tiny Graphics</title>
+<description>Issue 55 · 14 builds from the weekly DIY electronics roundup.</description>
+<link>https://www.tinkernews.com/issues/55-buildable-bots-smart-sensors-and-tiny-graphics</link>
+<guid isPermaLink="false">https://www.tinkernews.com/issues/55-buildable-bots-smart-sensors-and-tiny-graphics</guid>
+<pubDate>Mon, 28 Sep 2026 09:00:00 +0000</pubDate>
+<enclosure url="https://unseen1980.github.io/tinkernews-digest/audio/55-buildable-bots-smart-sensors-and-tiny-graphics.mp3" length="2663568" type="audio/mpeg"/>
+</item>
+</channel>
+</rss>
