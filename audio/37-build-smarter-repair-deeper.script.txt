@@ -1,0 +1,135 @@
+HOST 1: Welcome to the TinkerNews podcast, the audio edition of TinkerNews.
+
+HOST 2: We’re your guide to the best DIY electronics builds on the web, curated every week in our free newsletter over at tinkernews.com.
+
+HOST 1: This is the week of Issue #37, and the theme from our editor is "Build Smarter, Repair Deeper." We've got a lot to cover, so let's jump right in with 3D printing.
+
+HOST 2: First up, a big one for Creality owners. It’s a community deep-dive on converting a K1 SE 3D printer to get some of the more advanced features of the K1C model.
+
+HOST 1: And this isn't just about printing a new fan shroud. This is a proper hardware and software mod. We're talking about physically adding new fans and a thermistor.
+
+HOST 2: Right, and that means new wiring, but the really tricky part is on the software side. You have to modify the printer's firmware and update the Klipper configuration. The source is very clear: you can't just flash the K1C firmware onto a K1 SE. That is not the way to do it.
+
+HOST 1: I love this because it’s a perfect example of adding real functionality to a tool you already own. It's a deep-level modification that teaches you a ton about how your machine actually works.
+
+HOST 2: Absolutely. Let's move on to the Arduino section. First up is a classic problem-solver: a tutorial on adding 16 I/O pins to your microcontroller using a PCF8575 module.
+
+HOST 1: This is fundamental stuff. You always run out of pins. The PCF8575 chip is an I/O expander that communicates over the I2C protocol. That means it only uses two of your board's pins, SDA and SCL, to give you 16 new digital lines.
+
+HOST 2: And it’s not just for Arduino. The tutorial shows it working with the ESP8266 and ESP32 as well. A simple library handles all the I2C communication, so it's really accessible. A great way to expand your project's capabilities with a cheap, common module.
+
+HOST 1: Next in Arduino, we're getting into automotive diagnostics. This is a software library that lets an Arduino or an ESP32 talk to the engine control units of older cars that use the K-Line protocol.
+
+HOST 2: Yeah, this is cool because it's for pre-CAN bus vehicles. A lot of modern OBD2 scanners might struggle with these. Now, this is a software library, but it's not plug-and-play. You absolutely have to build a hardware interface with a "proper protected transceiver."
+
+HOST 1: You can’t just hook your microcontroller directly to your car's electrical system. Bad things will happen. But for makers who want to log data or reverse-engineer older vehicles, this is a fantastic entry point.
+
+HOST 2: Sticking with vehicles, but on the water this time, we have the BoatOpenIO v2. It’s the main board for a modular marine gateway system.
+
+HOST 1: This thing is designed for signal routing and impact detection on a boat. The design is really interesting. It uses a 16-to-1 multiplexer to channel a bunch of analog inputs into a single ADS1115 analog-to-digital converter.
+
+HOST 2: That's a classic design pattern to save on ADC inputs. For impact sensing, there's an onboard MPU6050. What I really appreciate is the focus on repairability—it uses socketed parts and swappable modules, which is so smart for a harsh marine environment.
+
+HOST 1: For sure. It's just one part of a bigger four-board system, but it’s a great case study in rugged, modular PCB design.
+
+HOST 2: Alright, let's head over to the DIY Electronics section. First build is a serious tool: an ESP32-controlled hot-air SMD rework station.
+
+HOST 1: This is a full-system build, not just a kit. It uses a thermocouple to sense the air temperature, and the ESP32 runs a PID control loop in MicroPython to keep that temperature super precise. Airflow is programmable, too.
+
+HOST 2: A custom PCB, high-temperature insulation, proper grounding... this project touches on all the tricky parts of power electronics. It’s a sophisticated build, but you end up with a powerful, programmable tool and learn a ton about PID control and high-temperature sensing.
+
+HOST 1: I love it. Next up, a project that really fits our "Repair Deeper" theme: reverse-engineering a failed Fellow Opus coffee grinder.
+
+HOST 2: This is a fantastic teardown. The grinder, a 2023 model, failed because of two snapped capacitor legs. Just physically broke. The analysis shows how it was built with a layered Class II enclosure and modular power and control boards, which actually made the diagnosis pretty easy.
+
+HOST 1: And the creator compares it to the 2025 replacement model, highlighting design changes. It’s just a masterclass in how to methodically approach a broken appliance and learn about product design evolution in the process.
+
+HOST 2: From modern appliances to vintage computing. This next one is about reconstructing a forgotten sound board for the Microprofessor computer system.
+
+HOST 1: And the amazing part is, this was done without the original hardware. It's pure digital archeology. The creator used historical photos for the layout, a MAME ROM dump for the software, and their knowledge of the core chip, the AY-3-8910 sound chip, to piece it all together.
+
+HOST 2: The output isn't a physical board, but a KiCad schematic and annotated software. It’s an incredible example of hardware preservation skills, showing how you can save a piece of history even when the physical artifacts are gone.
+
+HOST 1: Incredible stuff. Okay, last in this section is a hugely ambitious project called OOMWOO. It's an open-source, maker-built robot vacuum designed to run completely without cloud services.
+
+HOST 2: This is the whole package. A Raspberry Pi for the high-level processing, microcontrollers for the motors and sensors, LiDAR for navigation, and a 3D-printed chassis.
+
+HOST 1: And the software stack is serious, too—it's built on ROS2 and integrates with Home Assistant for that all-important local control. The project is still in early development, but it's a dream build for someone who wants to tackle a complex, modern robot from scratch while keeping their privacy intact.
+
+HOST 2: Definitely one to watch. Next section is ESP32, and we have a great smart retrofit project. It’s a guide on upgrading a PIC-based NodoShop OpenTherm Gateway with an ESP32-S3.
+
+HOST 1: OpenTherm is a protocol for smart thermostats and boilers. This project replaces the old PIC microcontroller with a modern LOLIN S3 Mini board. And just like that, you've added Wi-Fi.
+
+HOST 2: Exactly. The gateway can now be controlled via HTTP, REST, MQTT, or just a web browser. The guide also emphasizes a really smart, safe rollout: flash it, test it on your local network first, and only then think about optional remote access. A perfect IoT upgrade.
+
+HOST 1: Speaking of IoT, that’s our next big section. Kicking it off is a pocket-sized BLE privacy scanner built with an M5Stack, called GhostBLE.
+
+HOST 2: This is so clever. The M5Stack's built-in radio scans for Bluetooth Low Energy, or BLE, advertising packets—the little pings devices send out before you even pair with them. The tool then shows you what devices are nearby and what they're broadcasting.
+
+HOST 1: It makes an abstract privacy concern totally tangible. You can walk around your own smart home or lab and see exactly what information your gadgets are shouting into the void. It’s using maker skills for digital self-defense.
+
+HOST 2: Sticking with that theme of local control, we have a series of Home Assistant integrations. The first one pulls real-time data from ELRO Connects security hubs.
+
+HOST 1: Right, this integration talks directly to the ELRO K1 and K2 hubs on your local network. So you're not going out to the cloud and back. You get immediate events, battery levels, signal strength—all of it right in Home Assistant for local automations.
+
+HOST 2: It’s a great example of breaking a proprietary system out of its commercial silo and integrating it into an open smart home.
+
+HOST 1: Next, a similar project for TP-Link and Mercusys routers. This is another custom Home Assistant component.
+
+HOST 2: It's installed via the Home Assistant Community Store, or HACS, and it polls your router about every 30 seconds for status info. The source does note a couple of gotchas, like a router firmware update could break it, but the payoff is huge.
+
+HOST 1: Being able to create automations based on network status or which devices are connected is super powerful. It brings a core piece of your home infrastructure right into your smart home dashboard.
+
+HOST 2: Okay, this next one is just brilliant. It's about how a $20 ESP8266 can be used to call and track an apartment elevator.
+
+HOST 1: And crucially, without modifying the elevator's actual control system. It's a "black box" approach. An ESP8266 is hooked to a relay, which is wired in parallel with the hallway call button to simulate a press.
+
+HOST 2: So how does it track the elevator? An external camera, with a permitted view, just watches the floor indicator. The ESP8266 grabs that info, sends it over MQTT to Home Assistant, and you can see the elevator's status on a display by your door.
+
+HOST 1: It's non-invasive genius. Creative problem-solving at its best.
+
+HOST 2: Next in IoT, a self-hosted application called Network Optimizer for people running UniFi networks.
+
+HOST 1: This is a troubleshooting tool you can run yourself via Docker or on Windows. It connects to your UniFi controller to pull data. The project comes with a very responsible warning, though: be sure you understand exactly what controller access it needs and what data it's collecting before you run it.
+
+HOST 2: A very good reminder about security when you're giving third-party software the keys to your network kingdom.
+
+HOST 1: And our last IoT project is a look at the lifecycle of open-source. It’s an unmaintained Home Assistant integration for Anthbot robotic mowers.
+
+HOST 2: This one used to work by querying AWS IoT to get the mower's status. The original project is now dormant, but the source code is still a valuable technical reference. In fact, it points to a more current fork for users who need it.
+
+HOST 1: It's a great lesson. Even if a project is outdated, it can be a fantastic roadmap for anyone wanting to understand how to interface with a cloud-dependent device.
+
+HOST 2: Let's move on to Raspberry Pi. First up is a topic close to every Pi user's heart: alternatives to booting from an SD card.
+
+HOST 1: Because we've all had SD cards fail. The article compares the two main solutions. The simplest is booting from a USB SSD, and it mentions NVMe as an even faster option for the Pi 5.
+
+HOST 2: The more complex option is PXE, or Preboot Execution Environment. This is where multiple Pis boot over the network from a single server. It takes more setup, but for a multi-Pi cluster, it's a very robust solution. A really useful guide for improving reliability.
+
+HOST 1: Next, a fantastic "information survival kit" project: building a portable, offline internet with a Raspberry Pi.
+
+HOST 2: This is so cool. The Pi hosts its own private network and serves up things like local maps, a copy of Wikipedia, and even local AI tools, all without any connection to the outside world.
+
+HOST 1: It's a great exploration of data sovereignty and resilience. The project also dives into the practical trade-offs, like storage space for all that data and managing battery life.
+
+HOST 2: And last for the Pi section, a project that bridges the maker world with industrial tech. It’s a Raspberry Pi Modbus logger that's configured with Ansible.
+
+HOST 1: So you're using a Pi Zero or a Pi 4, connecting it to Modbus sensors over an RS-485 interface, and logging timestamped data to CSV files. Standard industrial stuff.
+
+HOST 2: But the magic is that the whole setup and configuration is managed using Ansible. This makes it incredibly scalable. If you need to build a reliable, multi-node sensor network, this gives you a professional, DevOps-style framework to do it.
+
+HOST 1: Love it. Okay, one last section: Robotics. And we have an amazing project called Nexara.
+
+HOST 2: Nexara is a physical, animatronic head that acts as an interface for a local, air-gapped AI system. So instead of typing at a prompt, you're interacting with a physical object.
+
+HOST 1: The tech is fascinating. It has two round displays for eyes, a spatial camera for input, and it moves on a three-axis servo-driven neck. An ESP32-S3 ties it all together.
+
+HOST 2: I really appreciate the attention to electronic design here. The project uses separated power rails to isolate the sensitive electronics from the noisy servos—that's a lesson every roboticist learns the hard way.
+
+HOST 1: And the whole point is that it’s designed to be independent of cloud services, bringing that AI interaction into your physical space, privately. It's a beautiful blend of mechatronics and practical design.
+
+HOST 2: A fantastic project to end on. That's everything from Issue #37 of TinkerNews.
+
+HOST 1: It was a packed issue! To make sure you don't miss awesome builds like these every single week, subscribe to the free weekly TinkerNews newsletter at tinkernews dot com.
+
+HOST 2: That's T-I-N-K-E-R-N-E-W-S dot com. Every Sunday's issue will land right in your inbox. Thanks for listening

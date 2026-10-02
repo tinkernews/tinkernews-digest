@@ -1,0 +1,139 @@
+HOST 1: Welcome to the TinkerNews podcast, the audio edition of TinkerNews, a free weekly newsletter curating the best DIY electronics builds on the web.
+
+HOST 2: That's right, you can find it all at tinkernews.com. We've got a fantastic issue for you today, TinkerNews number 55, and it is packed.
+
+HOST 1: Absolutely. Let's dive right in with our Raspberry Pi section. First up, a build to make a Raspberry Pi Thermal Printer.
+
+HOST 2: I love these. It’s a project that takes a Pi and uses it to drive one of those little thermal printers, turning digital text into a physical paper slip.
+
+HOST 1: Right, think custom receipt printer or a little physical notification machine. Technically, it’s a Raspberry Pi running Python scripts that send data over to the printer. The project repo has all the wiring docs you need.
+
+HOST 2: And a key detail here is that the software is all Python-based and it's under active development. The brief notes that you really need to check the current README file for the specific hardware and power requirements.
+
+HOST 1: Good tip. Okay, next up is a project called "Garden of Eden," which puts a Raspberry Pi in control of your automated garden.
+
+HOST 2: This is so cool. It’s designed as an open, local control system to replace those proprietary, closed-off garden controllers. You get to own your own system.
+
+HOST 1: Exactly. The Pi uses its GPIO pins to read environmental sensors and control hardware like pumps or lights. And the really neat part is that it's designed to feed all that sensor data directly into Home Assistant.
+
+HOST 2: Yeah, so you can integrate your garden into your whole smart home setup. The brief mentions it's a "work in progress," but for makers who want to avoid vendor lock-in, this is a fantastic starting point.
+
+HOST 1: From the garden to the skies! We have a Raspberry Pi Touchscreen Aircraft and Marine Tracker.
+
+HOST 2: This one looks slick. It's a compact, self-contained unit with a small touchscreen that displays nearby air and marine traffic in a kind of radar-style format.
+
+HOST 1: The core components are a Raspberry Pi and a 4-inch touchscreen, and it combines the traffic data with map views. But this is where it gets interesting for more experienced makers.
+
+HOST 2: Right. The brief explicitly says the project details don't yet confirm some critical things: the specific Pi model, how the touchscreen connects, the enclosure design, or even what receivers or APIs are used for the data.
+
+HOST 1: So it's a fantastic data visualization project, turning invisible radio waves or API data into something you can see, but you'll have to be prepared to fill in a few of the blanks yourself.
+
+HOST 2: A bit of a challenge build, I like it. Next on our Pi list: the Poké Pi, which is a Raspberry Pi Poké Ball Cyberdeck.
+
+HOST 1: This is just pure fun. It's a portable retro gaming console built inside a custom, 3D-printed Poké Ball shell.
+
+HOST 2: The enclosure was designed in Fusion 360, and it runs a software stack called "Gen 1 Recomp," which is obviously themed for classic Pokémon games. It's a perfect example of a themed cyberdeck build, blending 3D printing and electronics.
+
+HOST 1: Just like the tracker, the brief does note that some hardware details still need confirmation, but the photos show a really cool handheld device.
+
+HOST 2: Okay, this next one is a big one. It's a project called "Give an AI a Body," and it's a Raspberry Pi Robot.
+
+HOST 1: This is incredible. It's an open-source project that uses a Pi as the "brain" for a PiDog robot "body," so you can give a physical form to an AI.
+
+HOST 2: The tech is really interesting. The Pi connects to the PiDog platform over HTTP. The Pi handles all the AI processing—it can use hosted or even local language models—while the PiDog chassis provides the legs, camera, microphone, speaker, and motors.
+
+HOST 1: And it's packed with features. It has face recognition, speech capabilities, and you can even control it over the network using Telegram.
+
+HOST 2: It really connects the abstract world of AI with the physical world of robotics. It's a complete, open-source framework for anyone wanting to experiment with embodied AI.
+
+HOST 1: Sticking with advanced topics, next we have a Raspberry Pi CAN-Bus Reverse-Engineering Lab.
+
+HOST 2: Yes, this is a two-part toolkit called "CanLab." It's for capturing and analyzing CAN bus data, like you'd find in a modern car.
+
+HOST 1: The setup uses a Raspberry Pi as the logger to capture the raw CAN frames from the bus. Then, you take that data over to a desktop and use a custom Python and PyQt6 application to analyze it all.
+
+HOST 2: That desktop app helps you inspect the traffic, figure out what signals mean, and even export your findings as standard DBC files. It’s a really powerful open-source tool for automotive hacking.
+
+HOST 1: And the brief includes a very important safety warning here: the replay or injection features should only ever be used on an isolated bench, never in a moving vehicle.
+
+HOST 2: Absolutely critical. Don't mess with your car's bus on the road. Okay, last in the Pi section is the Open Duck Mini v2.
+
+HOST 1: This is a walking robot powered by a Raspberry Pi and built from 3D-printed parts. And a lot of them!
+
+HOST 2: A *lot* of them. The brief says it's made from 51 printed parts, which come from 36 separate STL files. So, your printer is going to be busy. The project does provide wiring diagrams and software guides to get it walking.
+
+HOST 1: But here’s the challenge: the source says the project has "no physical validation." That means you, the builder, will have to verify the part fits and your print settings.
+
+HOST 2: So it's a full-stack robotics project—mechanical, electronics, and software—with a bit of a challenge thrown in. Perfect for someone who loves to fine-tune a complex build.
+
+HOST 1: Alright, that wraps up the Pi section. Moving on to Arduino, we have a fascinating technical demo.
+
+HOST 2: This one is a brain-melter, in a good way. It’s a project showing how an ESP32-S3 can render N64-style "megatextures."
+
+HOST 1: So, it's a 3D graphics scene running on a microcontroller with no dedicated GPU, but it looks like something from a classic game console.
+
+HOST 2: Exactly. A custom software renderer runs directly on the ESP32-S3. The creator wanted to use these huge textures, so they figured out how to fit the data into the chip's 16 megabytes of PSRAM.
+
+HOST 1: How did they manage that?
+
+HOST 2: Through some very clever software tricks: 8-bit indexed color, using mipmaps, and data compression. It’s just a masterclass in pushing a cheap chip to do things you'd think are impossible.
+
+HOST 1: Amazing. Now for our DIY Electronics section, we have a project called FaderBuddy that lets you add motorized faders to a project using just two I2C pins.
+
+HOST 2: This simplifies something that is usually a huge pain. Each FaderBuddy is a little board with a 60 millimeter motorized fader and its own ATtiny1616 microcontroller.
+
+HOST 1: So the little ATtiny handles all the local motor control and position feedback?
+
+HOST 2: Precisely. And because they all speak I2C, you can daisy-chain a bunch of them and control them from a single host microcontroller. No more managing tons of GPIO pins and motor drivers.
+
+HOST 1: And it even has instructions for integrating with Home Assistant using ESPHome and just a little bit of YAML. That's a game-changer for custom control surfaces.
+
+HOST 2: Totally. Okay, let's jump over to the ESP32 section. First up is "murCO," a 3D-printed planter that monitors indoor CO₂.
+
+HOST 1: I love calm technology projects like this. It's an indoor air quality monitor, but it's hidden inside a really cool, geometric 3D-printed planter shell.
+
+HOST 2: Under the hood, it's an ESP32-based controller reading from an SCD40 sensor, which measures CO₂, temperature, and humidity. It sends all that data to Home Assistant.
+
+HOST 1: For local alerts, it doesn't use a screen. Instead, it has LEDs and even an optional speech output. It also has Bluetooth proxy capabilities. It's just a beautiful and functional smart home device.
+
+HOST 2: Next is an ESP32 Sparkle Motion Light.
+
+HOST 1: This project is for creating animated light displays where every single point of light seems to move and fade on its own, creating this organic, sparkly effect.
+
+HOST 2: The hardware is an ESP32-based Adafruit board controlling a string of addressable LEDs. The magic is in the software, which is written in CircuitPython. It handles generating all those independent animations for each LED.
+
+HOST 1: Using CircuitPython makes it really accessible for people to jump in and start tweaking colors, timing, and brightness. A great learning project for custom lighting.
+
+HOST 2: Absolutely. Our next ESP32 project is about building a Reliable ESP-NOW RC Car. The key word there is "reliable."
+
+HOST 1: Right, this project is less about the car itself and more about the communication link. It uses ESP-NOW, with an ESP32 in the controller and an ESP8266 in the car.
+
+HOST 2: The creator learned a lot from real-world hardware failures, so they focused on making the wireless link robust. The system implements packet checks, acknowledgements, failsafes, and a pairing mechanism.
+
+HOST 1: The brief even mentions a specific failure they debugged where a battery pack dropped to 2.02 volts. This project is full of practical lessons on making wireless systems that can actually handle real-world problems.
+
+HOST 2: A great guide to making ESP-NOW truly dependable. Moving on to our IoT section, we have a tutorial for the ESP32-C3 Super Mini.
+
+HOST 1: This is a great "getting started" guide for a tiny little board that has both Wi-Fi and Bluetooth.
+
+HOST 2: The guide walks you through the pinout and setting it up in the Arduino IDE. Then it demonstrates the two most important features for a compact IoT project.
+
+HOST 1: Which are?
+
+HOST 2: Connectivity and power saving. It shows you how to build a local web server to test the Wi-Fi, and how to use the deep-sleep mode with a timed wake-up to test power management. It’s the perfect primer for a tiny, battery-powered project.
+
+HOST 1: Excellent. That brings us to our final section: Robotics. And we're closing with a big one, the reBot-DevArm.
+
+HOST 2: This is an open-source robotic arm project. It provides everything—the hardware designs, the software—so makers can build their own advanced robotic arm.
+
+HOST 1: That’s amazing. This kind of hardware is usually locked behind really expensive, proprietary systems.
+
+HOST 2: And this one is truly open. The hardware is licensed under CERN-OHL-W-2.0 and the software is Apache-2.0, which are very permissive. Plus, it has planned integrations with major platforms like ROS, LeRobot, and Isaac Sim.
+
+HOST 1: So it's a serious platform for learning about things like physical manipulation and robot learning. The brief does note that some build specs are still being added to the repository, but what a fantastic resource for the community.
+
+HOST 2: Absolutely. It really opens the door to some high-level robotics experimentation for everyone.
+
+HOST 1: And that's a wrap for all the builds in TinkerNews Issue 55! What an incredible collection of projects this week.
+
+HOST 2: It really was. To get all the links, details, and source code for everything we talked about today, make sure you subscribe to the free weekly TinkerNews newsletter at tinkernews.com—that's T-I-N-K-E-R-N-E-W-S dot com—so every Sunday's issue lands right in your inbox.

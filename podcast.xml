@@ -7,14 +7,17 @@
 <language>en</language>
 <itunes:image href="https://www.tinkernews.com/og-image.jpg"/>
 <itunes:author>TinkerNews</itunes:author>
+<itunes:owner><itunes:email>info@tinkernews.com</itunes:email><itunes:name>TinkerNews</itunes:name></itunes:owner>
+<itunes:email>info@tinkernews.com</itunes:email>
 <itunes:category text="Technology"/>
+<itunes:explicit>false</itunes:explicit>
 <item>
 <title>TinkerNews #53: Smarter, Safer, More Local Builds</title>
 <description>Issue 53 · 14 builds from the weekly DIY electronics roundup.</description>
 <link>https://www.tinkernews.com/issues/53-smarter-safer-more-local-builds</link>
 <guid isPermaLink="false">https://www.tinkernews.com/issues/53-smarter-safer-more-local-builds</guid>
 <pubDate>Tue, 15 Sep 2026 09:00:00 +0000</pubDate>
-<enclosure url="https://unseen1980.github.io/tinkernews-digest/audio/53-smarter-safer-more-local-builds.mp3" length="2632176" type="audio/mpeg"/>
+<enclosure url="https://tinkernews.github.io/tinkernews-digest/audio/53-smarter-safer-more-local-builds.mp3" length="9456044" type="audio/mpeg"/>
 </item>
 <item>
 <title>TinkerNews #44: Unleash Your Creativity: DIY Arcade, Pianos, and Robotics</title>
@@ -22,7 +25,7 @@
 <link>https://www.tinkernews.com/issues/44-unleash-your-creativity-diy-arcade-pianos-and-robotics</link>
 <guid isPermaLink="false">https://www.tinkernews.com/issues/44-unleash-your-creativity-diy-arcade-pianos-and-robotics</guid>
 <pubDate>Sat, 01 Nov 2025 09:00:00 +0000</pubDate>
-<enclosure url="https://unseen1980.github.io/tinkernews-digest/audio/44-unleash-your-creativity-diy-arcade-pianos-and-robotics.mp3" length="1613520" type="audio/mpeg"/>
+<enclosure url="https://tinkernews.github.io/tinkernews-digest/audio/44-unleash-your-creativity-diy-arcade-pianos-and-robotics.mp3" length="4980140" type="audio/mpeg"/>
 </item>
 <item>
 <title>TinkerNews #27: DIY Arduino Weather Station: Capture the Skies</title>
@@ -30,7 +33,7 @@
 <link>https://www.tinkernews.com/issues/27-diy-arduino-weather-station-capture-the-skies</link>
 <guid isPermaLink="false">https://www.tinkernews.com/issues/27-diy-arduino-weather-station-capture-the-skies</guid>
 <pubDate>Mon, 29 Jun 2026 09:00:00 +0000</pubDate>
-<enclosure url="https://unseen1980.github.io/tinkernews-digest/audio/27-diy-arduino-weather-station-capture-the-skies.mp3" length="491184" type="audio/mpeg"/>
+<enclosure url="https://tinkernews.github.io/tinkernews-digest/audio/27-diy-arduino-weather-station-capture-the-skies.mp3" length="3323948" type="audio/mpeg"/>
 </item>
 <item>
 <title>TinkerNews #55: Buildable Bots, Smart Sensors, and Tiny Graphics</title>
@@ -38,7 +41,7 @@
 <link>https://www.tinkernews.com/issues/55-buildable-bots-smart-sensors-and-tiny-graphics</link>
 <guid isPermaLink="false">https://www.tinkernews.com/issues/55-buildable-bots-smart-sensors-and-tiny-graphics</guid>
 <pubDate>Mon, 28 Sep 2026 09:00:00 +0000</pubDate>
-<enclosure url="https://unseen1980.github.io/tinkernews-digest/audio/55-buildable-bots-smart-sensors-and-tiny-graphics.mp3" length="2663568" type="audio/mpeg"/>
+<enclosure url="https://tinkernews.github.io/tinkernews-digest/audio/55-buildable-bots-smart-sensors-and-tiny-graphics.mp3" length="10152620" type="audio/mpeg"/>
 </item>
 <item>
 <title>TinkerNews #54: Practical Builds for Smarter Spaces</title>
@@ -46,7 +49,7 @@
 <link>https://www.tinkernews.com/issues/54-practical-builds-for-smarter-spaces</link>
 <guid isPermaLink="false">https://www.tinkernews.com/issues/54-practical-builds-for-smarter-spaces</guid>
 <pubDate>Mon, 21 Sep 2026 09:00:00 +0000</pubDate>
-<enclosure url="https://unseen1980.github.io/tinkernews-digest/audio/54-practical-builds-for-smarter-spaces.mp3" length="2784384" type="audio/mpeg"/>
+<enclosure url="https://tinkernews.github.io/tinkernews-digest/audio/54-practical-builds-for-smarter-spaces.mp3" length="7750316" type="audio/mpeg"/>
 </item>
 <item>
 <title>TinkerNews #50: ESP32 Innovations: Clock, Weather, and Motion Projects</title>
@@ -54,7 +57,7 @@
 <link>https://www.tinkernews.com/issues/50-esp32-innovations-clock-weather-and-motion-projects</link>
 <guid isPermaLink="false">https://www.tinkernews.com/issues/50-esp32-innovations-clock-weather-and-motion-projects</guid>
 <pubDate>Mon, 08 Dec 2025 09:00:00 +0000</pubDate>
-<enclosure url="https://unseen1980.github.io/tinkernews-digest/audio/50-esp32-innovations-clock-weather-and-motion-projects.mp3" length="954000" type="audio/mpeg"/>
+<enclosure url="https://tinkernews.github.io/tinkernews-digest/audio/50-esp32-innovations-clock-weather-and-motion-projects.mp3" length="4031276" type="audio/mpeg"/>
 </item>
 <item>
 <title>TinkerNews #37: Build Smarter, Repair Deeper</title>
@@ -62,7 +65,7 @@
 <link>https://www.tinkernews.com/issues/37-build-smarter-repair-deeper</link>
 <guid isPermaLink="false">https://www.tinkernews.com/issues/37-build-smarter-repair-deeper</guid>
 <pubDate>Mon, 07 Sep 2026 09:00:00 +0000</pubDate>
-<enclosure url="https://unseen1980.github.io/tinkernews-digest/audio/37-build-smarter-repair-deeper.mp3" length="3410496" type="audio/mpeg"/>
+<enclosure url="https://tinkernews.github.io/tinkernews-digest/audio/37-build-smarter-repair-deeper.mp3" length="11772332" type="audio/mpeg"/>
 </item>
 <item>
 <title>TinkerNews #45: Innovative Maker Projects: From Mini Pianos to AI Assistants</title>
@@ -70,7 +73,7 @@
 <link>https://www.tinkernews.com/issues/45-innovative-maker-projects-from-mini-pianos-to-ai-assistants</link>
 <guid isPermaLink="false">https://www.tinkernews.com/issues/45-innovative-maker-projects-from-mini-pianos-to-ai-assistants</guid>
 <pubDate>Mon, 03 Nov 2025 09:00:00 +0000</pubDate>
-<enclosure url="https://unseen1980.github.io/tinkernews-digest/audio/45-innovative-maker-projects-from-mini-pianos-to-ai-assistants.mp3" length="1573344" type="audio/mpeg"/>
+<enclosure url="https://tinkernews.github.io/tinkernews-digest/audio/45-innovative-maker-projects-from-mini-pianos-to-ai-assistants.mp3" length="4724780" type="audio/mpeg"/>
 </item>
 <item>
 <title>TinkerNews #32: Health Tech and Wearable Innovation with Arduino</title>
@@ -78,7 +81,7 @@
 <link>https://www.tinkernews.com/issues/32-health-tech-and-wearable-innovation-with-arduino</link>
 <guid isPermaLink="false">https://www.tinkernews.com/issues/32-health-tech-and-wearable-innovation-with-arduino</guid>
 <pubDate>Mon, 03 Aug 2026 09:00:00 +0000</pubDate>
-<enclosure url="https://unseen1980.github.io/tinkernews-digest/audio/32-health-tech-and-wearable-innovation-with-arduino.mp3" length="641952" type="audio/mpeg"/>
+<enclosure url="https://tinkernews.github.io/tinkernews-digest/audio/32-health-tech-and-wearable-innovation-with-arduino.mp3" length="2613548" type="audio/mpeg"/>
 </item>
 </channel>
 </rss>

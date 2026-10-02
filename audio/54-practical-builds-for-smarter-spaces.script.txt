@@ -1,0 +1,111 @@
+HOST 1: Welcome to the TinkerNews podcast, everyone. We are the audio edition of TinkerNews, the best DIY electronics builds on the web, curated for you every single week.
+
+HOST 2: That's right. It's a free weekly newsletter, and you can find everything we're about to talk about at tinkernews dot com. This week we’re looking at TinkerNews issue number fifty-four: Practical Builds for Smarter Spaces. And we are starting with a huge ESP32 section.
+
+HOST 1: Kicking it off with an ESP32 MAX30102 Vital Signs Sensor. This is a little fingertip device that gives experimental readings for heart rate, SpO2, and temperature.
+
+HOST 2: And it's doing that with an ESP32 talking to that MAX30102 sensor module over I2C. The source is very clear though: this is for learning about physiological data, not for medical diagnosis.
+
+HOST 1: Right, it’s a learning tool. But a very cool one. Sticking with practical, how about an ESP32 Cooker Whistle Counter? It literally listens for your pressure cooker and sends you a notification when it's done.
+
+HOST 2: I love this. It uses a MAX4466 microphone to detect the whistles, and the ESP32 counts them. When it hits the target, it uses its Wi-Fi to send a WhatsApp message through the CircuitDigest Cloud service.
+
+HOST 1: That’s a real-world problem solved. The brief notes it needs careful calibration, which makes total sense for a sound-based project.
+
+HOST 2: Okay, from the kitchen to the living room with the SonosESP, which is a dedicated touchscreen Sonos wall panel.
+
+HOST 1: This looks so polished. It's using the more powerful ESP32-P4 microcontroller to drive a 4-inch or 7-inch touchscreen. It shows album art, lyrics, weather... a proper smart home fixture.
+
+HOST 2: Exactly. It's a great example of the graphical capabilities of that newer ESP32-P4. It’s way beyond just blinking an LED.
+
+HOST 1: Here’s a big one: ESP32 Tesla BLE Control with Home Assistant. This is a local bridge to control and monitor a Tesla over Bluetooth Low Energy.
+
+HOST 2: Yeah, no cloud API involved. The ESP32 runs ESPHome firmware, and it communicates directly with the car's BLE protocol. This is a perfect "local-first" IoT solution for privacy and reliability.
+
+HOST 1: The source does stress the importance of security, which is pretty critical when you’re sending commands that can physically affect a car.
+
+HOST 2: Absolutely. And speaking of taking back local control, there’s a project to replace a RIKA stove dongle with an ESP32-S3.
+
+HOST 1: Ah, a classic "de-clouding" project. So this one, called Open Firenet, replaces the proprietary dongle for a pellet stove?
+
+HOST 2: That's it. The ESP32-S3 connects right to the stove's USB port, emulates the original dongle, and then gives you Wi-Fi control through a local web page and a REST API. No manufacturer's cloud needed.
+
+HOST 1: That's an advanced one, for sure. You're dealing with reverse-engineered protocols and a potentially dangerous appliance.
+
+HOST 2: Definitely. Okay, last in our ESP32 marathon is RuView, a system that uses Wi-Fi sensing to detect motion and presence through walls.
+
+HOST 1: Wait, camera-free? How does that work?
+
+HOST 2: Multiple ESP32 nodes analyze disruptions in the ambient Wi-Fi signals in a room. From that, it can estimate presence, movement, and even breathing and heart rate. It’s a huge privacy-preserving alternative to cameras.
+
+HOST 1: That's wild. The brief does say its success is really dependent on the room layout and calibration, which I believe. So fascinating.
+
+HOST 2: Alright, let's move on to the 3D Printing section. First up is an open-source RP2040 Logic IC Tester.
+
+HOST 1: Oh, a piece of benchtop test equipment you can build yourself. This is for testing those old 74xx series logic chips.
+
+HOST 2: Yep. It's controlled by an RP2040, has sockets for 14-, 16-, and 20-pin chips—both TTL and CMOS. You use a rotary encoder and an OLED display to run the tests. And the enclosure is 3D-printed.
+
+HOST 1: I love that the complete PCB and editable 3D files are provided. It’s a totally reproducible workshop tool.
+
+HOST 2: Next is Yertle, a 3D-printed quadruped robot for locomotion research.
+
+HOST 1: So this isn't just a simple kit, it's a research platform. The whole mechanical structure is 3D-printed.
+
+HOST 2: And the software stack is C++ and Python, which is used to connect the physical robot to control algorithms, simulations, and machine learning frameworks. It’s a very deep learning experience.
+
+HOST 1: That sounds like a serious project. Okay, next up in DIY Electronics, we have a CYD Project Menu for Makers.
+
+HOST 2: This is a really clever one. It's not a single build, but a curated directory of projects for the "Cheap Yellow Display," that popular, inexpensive ESP32-based screen.
+
+HOST 1: So it's a community-managed GitHub repo that saves you a ton of time. It links you to projects to turn a CYD into a music dashboard, an F1 notifier, a game system… all sorts of things.
+
+HOST 2: Exactly. It's a fantastic jumping-off point for a really versatile piece of low-cost hardware.
+
+HOST 1: Moving to IoT, we have a story I think a lot of us can relate to: Turning an E-Waste PC into a Router.
+
+HOST 2: This is a great "real-world troubleshooting" project. The builder had an old PC with Intel 82574L network ports and tried to install OpenWrt.
+
+HOST 1: And it didn't work, right?
+
+HOST 2: It failed. The OS was missing the `e1000e` driver module for the network hardware, so the ports were just invisible. The project then pivoted to successfully testing OPNsense instead. It really shows how hardware projects are at the mercy of software support.
+
+HOST 1: So true. Okay, let's get into the Raspberry Pi section. First, running a Powerwall Grafana Dashboard on a Pi.
+
+HOST 2: This is a read-only dashboard for visualizing data from a Tesla Powerwall. The Pi collects data on the battery, solar, and grid usage, stores it in a time-series database, and then Grafana is used to create these incredibly detailed graphs.
+
+HOST 1: So it’s a safe, non-invasive way to get deep insights into your home energy system. All with standard open-source tools on low-cost hardware. I like it.
+
+HOST 2: Next is a Raspberry Pi Repeater Daemon in Python.
+
+HOST 1: For anyone in amateur radio, this is a big deal. It’s the software core that turns a Raspberry Pi and some radio hardware into a communications repeater.
+
+HOST 2: And it's a mature project. It's part of the OpenHop project and has over 1,200 commits, which is a great sign. The brief says it’s 1,274 commits and 277 stars. Users still need to figure out their own wiring, but the software is solid.
+
+HOST 1: From radio to the stars: Build an Automated Raspberry Pi All-Sky Camera.
+
+HOST 2: This is a software framework for an unattended camera to capture the night sky. The Pi uses the INDI protocol to control compatible astronomy hardware.
+
+HOST 1: INDI, that’s the Instrument-Neutral-Distributed-Interface. Using that standard means you can use it with a wide range of proper astro gear, not just a basic Pi camera. It automates a really complex task.
+
+HOST 2: Right, you just provide the camera, lens, and enclosure. The software handles the rest. Our last Pi project is a Homelab Monitor.
+
+HOST 1: This is for anyone running a bunch of services at home. It's a self-hosted dashboard on a Pi that shows the health of your computers and Docker containers. It even includes something called an MCP server for monitoring clients.
+
+HOST 2: It’s a perfect local alternative to cloud-based monitoring services. It solves that common pain point of not having a single view of everything going on in your lab.
+
+HOST 1: Finally, we've got a fantastic robotics project. It’s titled "Inside Pistonudo: A Student-Built WRO Robot."
+
+HOST 2: And this is amazing. It's the complete project documentation from the ChaBots team for their robot in the WRO Future Engineers 2026 competition.
+
+HOST 1: So it's not just the code and CAD files. It's... everything?
+
+HOST 2: Everything. The mechanics, electronics, software, but also their testing strategies, their design for serviceability, their cost planning, even the lessons they learned from the last season.
+
+HOST 1: That’s what the brief calls a "process-as-a-project." It’s a rare look into the entire lifecycle of a competition robot. Incredibly valuable.
+
+HOST 2: Absolutely. And that wraps up another jam-packed issue. So many great ideas for makers.
+
+HOST 1: It really does. To see all of these projects for yourself, with links to the code, guides, and videos, make sure you subscribe to the free weekly TinkerNews newsletter at tinkernews.com.
+
+HOST 2: That's tee-eye-en-kay-ee-are-en-ee-double-you-ess dot com. Every Sunday's issue will land right in your inbox. Thanks for listening.

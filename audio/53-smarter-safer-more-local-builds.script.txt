@@ -1,0 +1,131 @@
+HOST 1: Welcome to the TinkerNews podcast, the audio edition of TinkerNews, the free weekly newsletter that curates all the best DIY electronics builds from around the web.
+
+HOST 2: That's right, you can find it all at tinkernews.com. I'm HOST 2, here with HOST 1, and we're diving into Issue #53. The theme this week feels like builds that are smarter, safer, and a lot more locally controlled.
+
+HOST 1: Definitely a theme of taking back control. Let's start with Arduino. First up is an offline Arduino agent that understands plain English.
+
+HOST 2: Okay, that sounds really interesting. "Offline" and "plain English" are the key words there. How does it work?
+
+HOST 1: It uses an Arduino UNO Q board, which is powerful enough to run a local language model directly on the device. You type a command into the Arduino App Lab, like "turn on the red light," and the UNO Q figures it out and controls connected Modulino sensors and outputs.
+
+HOST 2: So, no internet, no API keys, just on-device processing. That's a huge shift. It means instead of re-flashing firmware to change behavior, you just… type a new sentence. It feels like a really practical way for makers to get into local AI.
+
+HOST 1: Exactly. Next in the Arduino section is a two-axis level with a zero reference feature.
+
+HOST 2: Ah, so more than just a standard digital level. What's the hardware?
+
+HOST 1: It's built around an Arduino Nano and an ADXL345 accelerometer. The Nano reads the pitch and roll from the accelerometer and shows it on a little OLED screen.
+
+HOST 2: And the "zero reference"? What does that do?
+
+HOST 1: That’s the clever part. You can place it on a surface, hit a "ZERO" button, and it stores that specific angle. Then you can move to another surface and measure its angle relative to the first one. It's perfect for fabrication tasks where you need to match an exact slope between two different objects.
+
+HOST 2: Right, not just finding "level," but copying an *angle*. That's a genuinely useful workshop tool.
+
+HOST 1: Let's move on to 3D Printing. The first project here is called MedusaHC, and it’s an open-source Python toolchanger for printers running Klipper.
+
+HOST 2: A toolchanger! For multi-material printing. That's usually a high-end, proprietary feature. How does this one pull it off?
+
+HOST 1: It's a mix of a mechanical system you build and a Python-based controller. The software is smart; it handles the whole sequence—parking the old tool, picking up the new one, priming, cleaning, all of it—while integrating with Klipper's commands.
+
+HOST 2: It is a beta project, though, right? The brief says it involves significant mechanical work and calibration.
+
+HOST 1: Oh, for sure. This is for experienced makers who are comfortable getting their hands dirty with their Klipper machines. But the payoff is a non-proprietary path to multi-tool 3D printing, which is fantastic.
+
+HOST 2: From complex mechanics to accessible science. The next project is a low-cost, 3D-printed AirFlow Microreactor.
+
+HOST 1: This is brilliant. It’s a device for holding LAMP reactions at a stable, elevated temperature. LAMP is a method for DNA amplification, for anyone wondering.
+
+HOST 2: And it does this with a 3D-printed chamber and forced hot air, all managed by an Arduino. The cost is the amazing part – approximately 100 pounds.
+
+HOST 1: It really is. It’s an evolving open build on the Biomaker project hub, with all the files available. This is the kind of thing that makes DIY biology and home-lab science so much more accessible for classrooms or community labs.
+
+HOST 2: Absolutely. Okay, let's jump to the ESP32 section. First up, Hestia32, an open thermostat for multi-stage HVAC systems.
+
+HOST 1: This is a direct response to those cloud-tethered smart thermostats we all hear about. This is all about local control. It's built on an ESP32-C5 microcontroller.
+
+HOST 2: What about the sensors and controls?
+
+HOST 1: It uses a high-quality SHT45 for temperature and humidity, has configurable relays to work with different HVAC systems, and a touchscreen for user interaction. It already supports MQTT for home automation.
+
+HOST 2: And the brief says it’s designed to be repairable. Plus, they're planning to add Thread, Matter, and Zigbee support. No cloud subscription. This is exactly what the open-source smart home community wants.
+
+HOST 1: It really is. And sticking with that theme, the next project is about turning a commercial Sonoff NSPanel into a local controller.
+
+HOST 2: Oh, I love these kinds of projects. Taking polished, affordable hardware and liberating it from the manufacturer's cloud.
+
+HOST 1: That’s the one. You flash the ESP32 inside the Sonoff panel with ESPHome. That exposes the panel's touchscreen, buttons, relays, and even its temperature sensor directly to Home Assistant.
+
+HOST 2: So Home Assistant becomes the local brain, and the Sonoff panel is just a beautiful, wall-mounted interface for it. The brief has a crucial safety warning, though.
+
+HOST 1: It does, and we have to mention it. This involves working directly with 240V mains terminals. This requires serious electrical safety precautions. It's not a beginner project.
+
+HOST 2: A very important note. Okay, on to the broader IoT category. First, syncing Home Assistant lights with the sun.
+
+HOST 1: This is one of those "why didn't I think of that?" software projects. It's a Home Assistant integration called "Adaptive Lighting" that adjusts your smart lights throughout the day to mimic natural sunlight.
+
+HOST 2: How does it know what the sun is doing?
+
+HOST 1: It just uses Home Assistant's built-in sun entity, which tracks the sun's position. So your lights get cooler and brighter during the day, then warmer and dimmer in the evening. And you don't need any new hardware, just your existing smart lights. A huge impact for zero cost.
+
+HOST 2: Love that. Next is another Home Assistant integration, this one for pulling data from Huawei Solar inverters.
+
+HOST 1: Right, for makers who have that specific solar hardware. The integration communicates with the inverter over the local network using the Modbus protocol.
+
+HOST 2: And that unlocks way more data than just the basic power generation number, right? You get all the details as standard Home Assistant entities.
+
+HOST 1: Exactly. You can then use that for much more sophisticated dashboards and automations to really optimize your energy usage. It's a great example of using open-source tools to get more out of your existing hardware.
+
+HOST 2: And what if you want to build your own hardware? The next guide is about building long-running ESP32 sensor nodes.
+
+HOST 1: This is such a fundamental skill. It’s all about maximizing battery life using the ESP32's Deep Sleep mode. The guide covers the whole "wake, measure, transmit, sleep" pattern.
+
+HOST 2: It goes beyond just the datasheet numbers, too. It talks about practical things, like different wake-up sources, retaining state across sleep cycles, and the real killer of batteries: board-level current leakage.
+
+HOST 1: That’s what makes it so useful. It teaches you the real-world skills to make a remote soil monitor that lasts for months instead of weeks.
+
+HOST 2: Moving on to the Raspberry Pi section, we've got a Pi 5 UPS with modular battery protection.
+
+HOST 1: This is a really well-thought-out project. It's an open-hardware Uninterruptible Power Supply for the Pi 5. The coolest feature is that it uses common, removable NP-F style batteries.
+
+HOST 2: The kind you see on cameras and video lights! That's smart. So it can run through a power outage, but you could also just grab a few batteries and run the Pi portably.
+
+HOST 1: Exactly. It handles power from USB-PD, seamlessly switches to the batteries, includes an OLED for status, and has firmware to trigger a safe shutdown. A complete solution.
+
+HOST 2: Next is PEBBLE, a Raspberry Pi recorder in a rock.
+
+HOST 1: A great case study in turning a Pi into a dedicated, single-purpose device. It's a portable voice recorder, and the project covers everything from wiring the microphone and handling audio capture to power management and designing the pebble-shaped enclosure.
+
+HOST 2: It's one of those projects that forces you to solve all the little problems of making a real-world gadget.
+
+HOST 1: For sure. And speaking of real-world gadgets, how about an OpenFlight Controller with a Raspberry Pi?
+
+HOST 2: That sounds ambitious.
+
+HOST 1: It is. This is for people interested in avionics or building drones. It uses the Pi for computation and covers GPIO wiring for controls and UART serial communication for peripherals. It’s described as an "active build," so it’s a work-in-progress.
+
+HOST 2: So you’re using the Pi's brain in a pretty demanding application where things have to be reliable.
+
+HOST 1: Absolutely. And for our last Pi project... well, it’s not really *for* a Pi, but it’s a similar spirit. It's an open-hardware IP-KVM for remote computer control, called ESPKVM.
+
+HOST 2: Ah, a KVM over IP. Invaluable for anyone running a home lab. So you can control a machine even if the OS is frozen or the network is down.
+
+HOST 1: Precisely. It uses custom hardware boards with an HDMI capture chip and a USB interface to emulate the keyboard and mouse. All the schematics are available, though the brief notes it's "pending hardware verification."
+
+HOST 2: Still, a fantastic starting point for building a tool that's usually incredibly expensive commercially. And you’d learn a ton about video capture and USB protocols.
+
+HOST 1: Definitely. Okay, last section: Robotics. And we have one project here, an open-source ADS-B receiver for nearby aircraft.
+
+HOST 2: Okay, so a flight tracker. Usually, that's a Raspberry Pi paired with an SDR dongle. How is this different?
+
+HOST 1: This project, called ADSBee, is a single, compact, low-power board. It’s custom-designed specifically for 1090 MHz reception, which is the ADS-B frequency. It handles both the radio part and the data decoding all on its own.
+
+HOST 2: So it’s a much more integrated and power-efficient solution. That would be perfect for a portable tracker or a remote monitoring station you just leave out in a field somewhere.
+
+HOST 1: Exactly. It's a great example of building specialized hardware for a specific task instead of using general-purpose components. And that wraps up another fantastic issue.
+
+HOST 2: So many great ideas in there. From local AI on an Arduino to building your own open-source lab gear.
+
+HOST 1: It’s what we love to see. And if you want to get projects like these delivered to you every single week, there's an easy way to do it.
+
+HOST 2: You just need to subscribe to the free weekly TinkerNews newsletter. Go to tinkernews dot com, that's t-i-n-k-e-r-n-e-w-s dot com, and every Sunday's issue will land right in your inbox.

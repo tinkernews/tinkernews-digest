@@ -1,0 +1,41 @@
+HOST 1: Welcome back to the TinkerNews podcast! We are the audio edition of TinkerNews, the free weekly newsletter that curates the absolute best DIY electronics builds from all over the web.
+
+HOST 2: That’s right. You can find everything we talk about today, and so much more, over at tinkernews.com. This week we’re looking at Issue #32, which has a fantastic theme: Health Tech and Wearables.
+
+HOST 1: A great theme. And we’re kicking it off with a project that is definitely on the more stylish end of the wearable spectrum: Light-Up Arduino Sneakers.
+
+HOST 2: Oh, I love this stuff. So it’s exactly what it sounds like? Sneakers with interactive lights?
+
+HOST 1: Exactly. The build integrates programmable LEDs right into the shoes. The system uses motion sensors to detect when you’re moving, and that sensor data gets processed by an Arduino.
+
+HOST 2: And the Arduino triggers the light show, I'm guessing. What kind of LEDs are we talking about?
+
+HOST 1: Yep, it drives dynamic light patterns on NeoPixels. The guide is really thorough, too—it covers component selection, the assembly, the coding, and a really crucial part of any wearable… power management.
+
+HOST 2: That’s always the challenge, isn’t it? Keeping it powered without a giant battery pack strapped to your ankle. It sounds like a fantastic hands-on project for anyone wanting to get into wearables.
+
+HOST 1: It really is. It’s a perfect, practical way to learn about integrating sensors and programmable LEDs in a mobile form factor. Super fun.
+
+HOST 2: Okay, so from fun wearables we pivot to some seriously impressive health tech. This next one is an Open-Source ESP32 Spirometer.
+
+HOST 1: Wow, okay. A spirometer—that’s a device for measuring lung function, right? A DIY version of that is ambitious.
+
+HOST 2: Totally. This one is specifically designed to measure tidal volume, and it's built for home construction. It works by using a flow sensor to measure the movement of air as you breathe.
+
+HOST 1: And what’s processing that data?
+
+HOST 2: The brain is an ESP32 board—specifically, the ESP32-POE-ISO model. It reads the data from the sensor and does the calculations.
+
+HOST 1: And what about that sensor? For something like this, the quality of the sensor seems critical.
+
+HOST 2: For sure. The project uses a Sensirion SFM3300 Flow Sensor. It’s a serious piece of kit. And the best part is that the whole design is open-source.
+
+HOST 1: That’s what makes it so great for the maker community. It gives you this accessible, customizable starting point for building your own actual medical measurement device. That is incredible.
+
+HOST 2: It really is. A fantastic example of how makers can get into building meaningful health technology. So, from light-up sneakers to DIY medical devices, another great issue.
+
+HOST 1: Absolutely. And if you want the links, the code, and the full guides for both of these builds, you’ll find them in this week's newsletter.
+
+HOST 2: To make sure every Sunday issue lands directly in your inbox, subscribe to the free weekly TinkerNews newsletter over at tinkernews.com.
+
+HOST 1: We'll see you next time.
