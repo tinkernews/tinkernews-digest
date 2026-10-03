@@ -2,6 +2,8 @@
 
 Curated DIY electronics builds — open source digest of the TinkerNews newsletter
 
+**Listen:** every issue also ships as an episode — [podcast RSS](https://tinkernews.github.io/tinkernews-digest/podcast.xml) (Spotify / Deezer). **Bench tools:** [free pinouts & calculators](https://tinkernews.github.io/tools/) (ESP32 pinout, resistor codes, battery life, LED power, wire gauge).
+
 **Stats:** 9 issues · 85 builds
 
 ## Issues
