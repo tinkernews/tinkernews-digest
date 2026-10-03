@@ -3,13 +3,14 @@
 <channel>
 <title>TinkerNews — DIY Electronics Weekly</title>
 <link>https://www.tinkernews.com</link>
-<description>Free weekly DIY electronics builds — ESP32, Arduino, Raspberry Pi, robotics, IoT.</description>
+<description>Free weekly DIY electronics builds: the best ESP32, Arduino, Raspberry Pi, robotics and IoT projects on the web, walked through with honest hardware notes and source links. Maker builds, home automation, sensors, 3D printing and embedded tutorials — every week.</description>
 <language>en</language>
 <itunes:image href="https://www.tinkernews.com/og-image.jpg"/>
 <itunes:author>TinkerNews</itunes:author>
 <itunes:owner><itunes:email>info@tinkernews.com</itunes:email><itunes:name>TinkerNews</itunes:name></itunes:owner>
 <itunes:email>info@tinkernews.com</itunes:email>
 <itunes:category text="Technology"/>
+<itunes:type>episodic</itunes:type>
 <itunes:explicit>false</itunes:explicit>
 <item>
 <title>TinkerNews #53: Smarter, Safer, More Local Builds</title>
