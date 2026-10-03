@@ -14,7 +14,7 @@
 <itunes:explicit>false</itunes:explicit>
 <item>
 <title>TinkerNews #53: Smarter, Safer, More Local Builds</title>
-<description>Issue 53 · 14 builds from the weekly DIY electronics roundup.</description>
+<description>TinkerNews #53: An Offline Arduino Agent That Understands Plain English; Arduino Two-Axis Level With Zero Reference; MedusaHC: Open-Source Python Toolchanger for Klipper; Build a Low-Cost 3D-Printed AirFlow Microreactor; Hestia32: An Open Thermostat for Multi-Stage HVAC; Turn a Sonoff NSPanel into Local Control; Sync Home Assistant Lights With the Sun; Turning Huawei Solar into Home Assistant Data; Build Long-Running ESP32 Sensor Nodes with Deep Sleep; Raspberry Pi 5 UPS with Modular Battery Protection; PEBBLE: A Raspberry Pi Recorder in a Rock; Build an OpenFlight Controller with Raspberry Pi; Build an Open-Hardware IP-KVM for Remote Computer Control; Build an Open-Source ADS-B Receiver for Nearby Aircraft. 14 curated DIY electronics builds — ESP32, Arduino, Raspberry Pi, robotics, IoT — with source links and honest hardware notes. Full issue: https://www.tinkernews.com/issues/53-smarter-safer-more-local-builds</description>
 <link>https://www.tinkernews.com/issues/53-smarter-safer-more-local-builds</link>
 <guid isPermaLink="false">https://www.tinkernews.com/issues/53-smarter-safer-more-local-builds</guid>
 <pubDate>Tue, 15 Sep 2026 09:00:00 +0000</pubDate>
@@ -22,7 +22,7 @@
 </item>
 <item>
 <title>TinkerNews #44: Unleash Your Creativity: DIY Arcade, Pianos, and Robotics</title>
-<description>Issue 44 · 8 builds from the weekly DIY electronics roundup.</description>
+<description>TinkerNews #44: Build Your Own Arduino Arcade Cabinet; Build a DIY Mini Electronic Piano; Build a Handheld Space Invaders Arcade; Crafting a Miniature Aquatic World: DIY Table Top Aquarium; ESP32 and LoRa: A Practical Guide; Robotic Arm with Arduino and 3D Printing; DIY Arduino-Controlled Robotic Arm Project; Innovative Robotics Project: AC Motor Control. 8 curated DIY electronics builds — ESP32, Arduino, Raspberry Pi, robotics, IoT — with source links and honest hardware notes. Full issue: https://www.tinkernews.com/issues/44-unleash-your-creativity-diy-arcade-pianos-and-robotics</description>
 <link>https://www.tinkernews.com/issues/44-unleash-your-creativity-diy-arcade-pianos-and-robotics</link>
 <guid isPermaLink="false">https://www.tinkernews.com/issues/44-unleash-your-creativity-diy-arcade-pianos-and-robotics</guid>
 <pubDate>Sat, 01 Nov 2025 09:00:00 +0000</pubDate>
@@ -30,7 +30,7 @@
 </item>
 <item>
 <title>TinkerNews #27: DIY Arduino Weather Station: Capture the Skies</title>
-<description>Issue 27 · 1 builds from the weekly DIY electronics roundup.</description>
+<description>TinkerNews #27: Build an Arduino Weather Station. 1 curated DIY electronics builds — ESP32, Arduino, Raspberry Pi, robotics, IoT — with source links and honest hardware notes. Full issue: https://www.tinkernews.com/issues/27-diy-arduino-weather-station-capture-the-skies</description>
 <link>https://www.tinkernews.com/issues/27-diy-arduino-weather-station-capture-the-skies</link>
 <guid isPermaLink="false">https://www.tinkernews.com/issues/27-diy-arduino-weather-station-capture-the-skies</guid>
 <pubDate>Mon, 29 Jun 2026 09:00:00 +0000</pubDate>
@@ -38,7 +38,7 @@
 </item>
 <item>
 <title>TinkerNews #55: Buildable Bots, Smart Sensors, and Tiny Graphics</title>
-<description>Issue 55 · 14 builds from the weekly DIY electronics roundup.</description>
+<description>TinkerNews #55: Build a Raspberry Pi Thermal Printer; Garden of Eden Puts a Raspberry Pi in Control; Raspberry Pi Touchscreen Aircraft and Marine Tracker; Poké Pi: A Raspberry Pi Poké Ball Cyberdeck; Give an AI a Body: Raspberry Pi Robot; Build a Raspberry Pi CAN-Bus Reverse-Engineering Lab; Build the Open Duck Mini v2; How an ESP32-S3 Renders N64-Style Megatextures; Add Motorized Faders Over Two I2C Pins; A 3D-Printed Planter That Monitors Indoor CO₂; Build an ESP32 Sparkle Motion Light; Reliable ESP-NOW RC Car With ESP32 and ESP8266; ESP32-C3 Super Mini: Wi-Fi Tests and Deep Sleep; reBot-DevArm Opens a Robotic Arm to Makers. 14 curated DIY electronics builds — ESP32, Arduino, Raspberry Pi, robotics, IoT — with source links and honest hardware notes. Full issue: https://www.tinkernews.com/issues/55-buildable-bots-smart-sensors-and-tiny-graphics</description>
 <link>https://www.tinkernews.com/issues/55-buildable-bots-smart-sensors-and-tiny-graphics</link>
 <guid isPermaLink="false">https://www.tinkernews.com/issues/55-buildable-bots-smart-sensors-and-tiny-graphics</guid>
 <pubDate>Mon, 28 Sep 2026 09:00:00 +0000</pubDate>
@@ -46,7 +46,7 @@
 </item>
 <item>
 <title>TinkerNews #54: Practical Builds for Smarter Spaces</title>
-<description>Issue 54 · 15 builds from the weekly DIY electronics roundup.</description>
+<description>TinkerNews #54: Build an ESP32 MAX30102 Vital Signs Sensor; Build an ESP32 Cooker Whistle Counter; ESP32 Touchscreen Sonos Wall Panel; ESP32 Tesla BLE Control with Home Assistant; Replace a RIKA Stove Dongle with ESP32-S3; RuView: WiFi Sensing Through Walls; Build an Open-Source RP2040 Logic IC Tester; Yertle: A 3D-Printed Quadruped for Locomotion Research; A CYD Project Menu for Makers; Turning an E-Waste PC into a Router; Run a Powerwall Grafana Dashboard on a Raspberry Pi; A Raspberry Pi Repeater Daemon in Python; Build an Automated Raspberry Pi All-Sky Camera; Build a Raspberry Pi Homelab Monitor; Inside Pistonudo: A Student-Built WRO Robot. 15 curated DIY electronics builds — ESP32, Arduino, Raspberry Pi, robotics, IoT — with source links and honest hardware notes. Full issue: https://www.tinkernews.com/issues/54-practical-builds-for-smarter-spaces</description>
 <link>https://www.tinkernews.com/issues/54-practical-builds-for-smarter-spaces</link>
 <guid isPermaLink="false">https://www.tinkernews.com/issues/54-practical-builds-for-smarter-spaces</guid>
 <pubDate>Mon, 21 Sep 2026 09:00:00 +0000</pubDate>
@@ -54,7 +54,7 @@
 </item>
 <item>
 <title>TinkerNews #50: ESP32 Innovations: Clock, Weather, and Motion Projects</title>
-<description>Issue 50 · 4 builds from the weekly DIY electronics roundup.</description>
+<description>TinkerNews #50: Create a Retro Macintosh Desk Clock; ESP32 Projects with Practical Applications; Build an ESP32 Smart Clock and Weather Station; ESP32 and PIR Sensor Integration. 4 curated DIY electronics builds — ESP32, Arduino, Raspberry Pi, robotics, IoT — with source links and honest hardware notes. Full issue: https://www.tinkernews.com/issues/50-esp32-innovations-clock-weather-and-motion-projects</description>
 <link>https://www.tinkernews.com/issues/50-esp32-innovations-clock-weather-and-motion-projects</link>
 <guid isPermaLink="false">https://www.tinkernews.com/issues/50-esp32-innovations-clock-weather-and-motion-projects</guid>
 <pubDate>Mon, 08 Dec 2025 09:00:00 +0000</pubDate>
@@ -62,7 +62,7 @@
 </item>
 <item>
 <title>TinkerNews #37: Build Smarter, Repair Deeper</title>
-<description>Issue 37 · 19 builds from the weekly DIY electronics roundup.</description>
+<description>TinkerNews #37: Converting a K1 SE Toward K1C Features; Add 16 I/O Pins with a PCF8575; Build an Arduino/ESP32 OBD2 K-Line Tool; BoatOpenIO v2: Modular Marine Gateway Main Board; ESP32 Hot-Air SMD Rework Station; Reverse-Engineering a Failed Fellow Opus Grinder; Reconstructing a Forgotten Microprofessor Sound Board; OOMWOO: A Local, Open Robot Vacuum; ESP32-S3 Retrofit for Safer OpenTherm Control; Build a Pocket BLE Privacy Scanner with an M5Stack; ELRO Hubs Send Real-Time Events to Home Assistant; Bring TP-Link and Mercusys Routers into Home Assistant; How a $20 ESP8266 Calls and Tracks Elevators; A Self-Hosted UniFi Network Companion; Anthbot Mowers in Home Assistant—An Unmaintained Integration; USB SSD Boot or PXE Network Boot?; Build a Portable Offline Internet with a Raspberry Pi; Build a Raspberry Pi Modbus Logger with Ansible; Building Nexara: An Air-Gapped AI Avatar Head. 19 curated DIY electronics builds — ESP32, Arduino, Raspberry Pi, robotics, IoT — with source links and honest hardware notes. Full issue: https://www.tinkernews.com/issues/37-build-smarter-repair-deeper</description>
 <link>https://www.tinkernews.com/issues/37-build-smarter-repair-deeper</link>
 <guid isPermaLink="false">https://www.tinkernews.com/issues/37-build-smarter-repair-deeper</guid>
 <pubDate>Mon, 07 Sep 2026 09:00:00 +0000</pubDate>
@@ -70,7 +70,7 @@
 </item>
 <item>
 <title>TinkerNews #45: Innovative Maker Projects: From Mini Pianos to AI Assistants</title>
-<description>Issue 45 · 8 builds from the weekly DIY electronics roundup.</description>
+<description>TinkerNews #45: Build a Mini Electronic Piano with Arduino; Build an Arcade Cabinet with Arduino; Building with ESP32: Innovative Hacks; Building &#x27;Garbage&#x27;: A Music Node; Build a Raspberry Pi Zero W Home Switch; Install openHABian on Raspberry Pi; Build an AI Assistant with Raspberry Pi; Build an Arcade Cabinet with Arduino Uno Q. 8 curated DIY electronics builds — ESP32, Arduino, Raspberry Pi, robotics, IoT — with source links and honest hardware notes. Full issue: https://www.tinkernews.com/issues/45-innovative-maker-projects-from-mini-pianos-to-ai-assistants</description>
 <link>https://www.tinkernews.com/issues/45-innovative-maker-projects-from-mini-pianos-to-ai-assistants</link>
 <guid isPermaLink="false">https://www.tinkernews.com/issues/45-innovative-maker-projects-from-mini-pianos-to-ai-assistants</guid>
 <pubDate>Mon, 03 Nov 2025 09:00:00 +0000</pubDate>
@@ -78,7 +78,7 @@
 </item>
 <item>
 <title>TinkerNews #32: Health Tech and Wearable Innovation with Arduino</title>
-<description>Issue 32 · 2 builds from the weekly DIY electronics roundup.</description>
+<description>TinkerNews #32: Make Sneakers Light Up with Arduino; Build an Open-Source Spirometer. 2 curated DIY electronics builds — ESP32, Arduino, Raspberry Pi, robotics, IoT — with source links and honest hardware notes. Full issue: https://www.tinkernews.com/issues/32-health-tech-and-wearable-innovation-with-arduino</description>
 <link>https://www.tinkernews.com/issues/32-health-tech-and-wearable-innovation-with-arduino</link>
 <guid isPermaLink="false">https://www.tinkernews.com/issues/32-health-tech-and-wearable-innovation-with-arduino</guid>
 <pubDate>Mon, 03 Aug 2026 09:00:00 +0000</pubDate>
