@@ -2,9 +2,7 @@
 
 Curated DIY electronics builds — open source digest of the TinkerNews newsletter
 
-**Listen:** every issue also ships as an episode — [podcast RSS](https://tinkernews.github.io/tinkernews-digest/podcast.xml) (Spotify / Deezer). **Bench tools:** [free pinouts & calculators](https://tinkernews.github.io/tools/) (ESP32 pinout, resistor codes, battery life, LED power, wire gauge).
-
-**Stats:** 9 issues · 85 builds
+**Stats:** 10 issues · 100 builds
 
 ## Issues
 
@@ -19,3 +17,4 @@ Curated DIY electronics builds — open source digest of the TinkerNews newslett
 | 53 | 2026-09-15 | Smarter, Safer, More Local Builds | 14 | [53-smarter-safer-more-local-builds.md](issues/53-smarter-safer-more-local-builds.md) |
 | 54 | 2026-09-21 | Practical Builds for Smarter Spaces | 15 | [54-practical-builds-for-smarter-spaces.md](issues/54-practical-builds-for-smarter-spaces.md) |
 | 55 | 2026-09-28 | Buildable Bots, Smart Sensors, and Tiny Graphics | 14 | [55-buildable-bots-smart-sensors-and-tiny-graphics.md](issues/55-buildable-bots-smart-sensors-and-tiny-graphics.md) |
+| 56 | 2026-10-05 | ESP32 Fall Detectors, Aircraft Radar, and Gesture Gloves | 15 | [56-esp32-fall-detectors-aircraft-radar-and-gesture-gloves.md](issues/56-esp32-fall-detectors-aircraft-radar-and-gesture-gloves.md) |
