@@ -69,6 +69,14 @@
 <enclosure url="https://tinkernews.github.io/tinkernews-digest/audio/37-build-smarter-repair-deeper.mp3" length="11772332" type="audio/mpeg"/>
 </item>
 <item>
+<title>TinkerNews #56: ESP32 Fall Detectors, Aircraft Radar, and Gesture Gloves</title>
+<description>TinkerNews #56: Wearable ESP32 Fall Detector Sends WhatsApp Alerts; Wall-Mounted ESP32 Touchscreen with Wireless Relay Control; Build an ESP32 Aircraft Radar Console; Arduino Five-Antenna Selector Uses CAT and BCD; Use a BJT to Drive a 12V MOSFET from Arduino; Build an Uno with a Built-In MPU-6050; Set Up Automatic Multi-Color Printing on a QIDI Q2; FaderBuddy Makes Motorized Faders Modular; Build a $10 ESP32 Flock Camera Detector; Project Hydra: An Open 1 W LoRa PCB for Meshtastic; A Gesture-Controlled ESP32 Glove for 3D Building; Build an ESP32-S3 Bambu Lab Printer Monitor; How FlipDeFlock Maps Nearby Surveillance Signals; WiFi Sensing Turns Routers Into Room Monitors; Build a Raspberry Pi MQTT Hub with Mosquitto. 15 curated DIY electronics builds — ESP32, Arduino, Raspberry Pi, robotics, IoT — with source links and honest hardware notes. Full issue: https://www.tinkernews.com/issues/56-esp32-fall-detectors-aircraft-radar-and-gesture-gloves</description>
+<link>https://www.tinkernews.com/issues/56-esp32-fall-detectors-aircraft-radar-and-gesture-gloves</link>
+<guid isPermaLink="false">https://www.tinkernews.com/issues/56-esp32-fall-detectors-aircraft-radar-and-gesture-gloves</guid>
+<pubDate>Mon, 05 Oct 2026 09:00:00 +0000</pubDate>
+<enclosure url="https://tinkernews.github.io/tinkernews-digest/audio/56-esp32-fall-detectors-aircraft-radar-and-gesture-gloves.mp3" length="13335212" type="audio/mpeg"/>
+</item>
+<item>
 <title>TinkerNews #45: Innovative Maker Projects: From Mini Pianos to AI Assistants</title>
 <description>TinkerNews #45: Build a Mini Electronic Piano with Arduino; Build an Arcade Cabinet with Arduino; Building with ESP32: Innovative Hacks; Building &#x27;Garbage&#x27;: A Music Node; Build a Raspberry Pi Zero W Home Switch; Install openHABian on Raspberry Pi; Build an AI Assistant with Raspberry Pi; Build an Arcade Cabinet with Arduino Uno Q. 8 curated DIY electronics builds — ESP32, Arduino, Raspberry Pi, robotics, IoT — with source links and honest hardware notes. Full issue: https://www.tinkernews.com/issues/45-innovative-maker-projects-from-mini-pianos-to-ai-assistants</description>
 <link>https://www.tinkernews.com/issues/45-innovative-maker-projects-from-mini-pianos-to-ai-assistants</link>

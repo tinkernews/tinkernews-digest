@@ -1,0 +1,159 @@
+HOST 1: Welcome to the TinkerNews podcast, the audio edition of TinkerNews.
+
+HOST 2: We're your hosts, and this is the show where we talk through the best DIY electronics builds on the web, curated for you in the free weekly TinkerNews newsletter over at tinkernews.com.
+
+HOST 1: And this week, Issue #56, we're seeing a whole lot of ESP32s out in the wild. These projects are bridging the digital and physical worlds in some really practical ways.
+
+HOST 2: Absolutely. From safety devices to data consoles, there’s a lot to dig into. Let's start with the Arduino category. First up is a wearable ESP32 Fall Detector that sends WhatsApp alerts.
+
+HOST 1: This is such a great, real-world project. It's a device in a 3D-printed case that detects if someone falls, and if they don't move, it automatically sends a WhatsApp message to a contact.
+
+HOST 2: And the tech is pretty straightforward but clever. It uses an MPU6050 IMU, which is a 6-axis accelerometer and gyroscope, to sense the sudden motion of a fall.
+
+HOST 1: The brain is a Seeed Studio XIAO ESP32-S3. If it detects a potential fall, it starts a ten-second timer. If the person is immobile for that whole time, it connects to Wi-Fi and uses a service called CircuitDigest Cloud to send the WhatsApp alert.
+
+HOST 2: Using that third-party cloud service is a really smart move. It simplifies the whole process of integrating with a major platform like WhatsApp. No messing with complex APIs directly.
+
+HOST 1: Exactly. It's a complete assistive technology project, but it also forces you to think about real-world issues like network connectivity and how to calibrate the sensor to avoid false alarms.
+
+HOST 2: For sure. Okay, next up is a Wall-Mounted ESP32 Touchscreen for wireless relay control. This is a slick home automation panel.
+
+HOST 1: It is! It's a two-part system. The user interface is a VIEWE ESP32-S3 which has a touchscreen built right in. That's what you mount on the wall.
+
+HOST 2: And then separately, there's another ESP32 connected to a four-relay module and a DHT22 temperature and humidity sensor. And the really cool part is how they talk to each other.
+
+HOST 1: This is the key detail: they use the ESP-NOW protocol. It's a direct board-to-board communication link. It doesn't rely on your central Wi-Fi router, which is fantastic for responsiveness and not cluttering your network.
+
+HOST 2: The whole thing is managed by ESPHome, and it doesn't just show local sensor data. It pulls in weather forecasts from OpenWeather, UV data from Open-Meteo, and time from an NTP server.
+
+HOST 1: It's just a great demonstration of a clean, decentralized hardware setup, and a perfect tutorial on building a sophisticated UI that aggregates both local and internet data.
+
+HOST 2: Love it. From home automation to the skies... our next project is an ESP32 Aircraft Radar Console.
+
+HOST 1: This is a classic "data appliance" build. It's a little desktop box with a 1.8-inch TFT display that shows you nearby aircraft. A personal ADS-B console.
+
+HOST 2: It works by having the ESP32 connect to the internet via Wi-Fi and pull data from the OpenSky public API. The custom firmware, called FlyRadar32, processes that telemetry and renders it on the screen.
+
+HOST 1: And the user experience is polished. The firmware installation is done through a browser-based tool, and it even has extra screens for weather and diagnostics. There's a FreeCAD design for the 3D-printed case, too.
+
+HOST 2: It's the perfect example of taking an abstract online data stream and giving it a physical, tangible interface. Great for anyone into aviation or just building finished-looking projects.
+
+HOST 1: Okay, let's switch gears to a different kind of radio. An Arduino Five-Antenna Selector that uses CAT and BCD.
+
+HOST 2: This is a really specific tool for amateur radio operators. It’s an automated controller that chooses the right antenna, out of five, based on the frequency band the radio is using.
+
+HOST 1: Right, and it's clever about how it gets that information. It can listen for input using two different protocols: CAT, which is a serial protocol, or BCD, Binary-Coded Decimal signals.
+
+HOST 2: Based on that input, the Arduino triggers the correct relay to switch the antenna. It shows the selected antenna on a seven-segment display and even sounds a buzzer to alert the operator of the change.
+
+HOST 1: It's a perfect example of interfacing with specialized equipment. For makers in general, it’s a great lesson in handling multiple types of input and having a clear logic: read, decide, act, and provide feedback.
+
+HOST 2: And from a very specific application to a very fundamental one. Our next build is a tutorial on how to use a BJT to drive a 12V MOSFET from an Arduino.
+
+HOST 1: This is a circuit every maker needs to learn. It answers the question, "Why can't I just connect my 12V motor directly to my 5V Arduino pin?"
+
+HOST 2: Because you'll fry it! The 5V signal from the Arduino isn't enough to fully turn on a 12V MOSFET. So this circuit uses a Bipolar Junction Transistor, a BJT, as an intermediary.
+
+HOST 1: The Arduino's 5V signal turns on the BJT, and the BJT acts like a switch to properly control the MOSFET's gate, connecting it to the 12V supply or pulling it to ground. The MOSFET then handles the heavy lifting of switching the 12V load, keeping the high power totally separate from the delicate microcontroller.
+
+HOST 2: This is the gateway to controlling anything with significant power—motors, solenoids, big LED strips, fans. It’s a core building block.
+
+HOST 1: Speaking of core building blocks, how about building your own custom Arduino? This next one is an Uno with a built-in MPU-6050.
+
+HOST 2: This is for anyone who's tired of breakout boards and messy jumper wires. It's a custom PCB, designed in KiCad, that combines the standard Arduino Uno R3 layout with an MPU-6050 IMU right on the board.
+
+HOST 1: And it's not just a matter of sticking the parts on there. The design includes the necessary logic-level shifting to handle the I²C communication between the 5V ATmega microcontroller and the 3.3V MPU-6050 sensor.
+
+HOST 2: To save space, they even placed the MPU-6050 on the underside of the PCB. It’s just a great case study in designing your own application-specific board to make your projects more compact, professional, and repeatable.
+
+HOST 1: Alright, let's move into our DIY Electronics category. First up is FaderBuddy, which makes motorized faders modular. I love this.
+
+HOST 2: This is so smart. It's a small control board that turns a standard 60mm motorized fader into a smart, modular peripheral that speaks I²C.
+
+HOST 1: Right. Each FaderBuddy has its own ATtiny1616 microcontroller that handles all the low-level motor driving and position sensing for one fader.
+
+HOST 2: So your main project's microcontroller just has to talk I²C. It can ask the FaderBuddy for its current position, or tell it to move to a new position. The little ATtiny1616 handles the rest. You can even create virtual detents or haptic feedback patterns.
+
+HOST 1: It’s a brilliant piece of distributed control. It abstracts away a really complex task. If you're building a custom audio mixer or a control panel with a dozen faders, you don't have to write that complex motor code twelve times. You just talk to twelve simple I²C devices.
+
+HOST 2: It's genius. Now for something completely different: a ten-dollar ESP32 Flock Camera Detector.
+
+HOST 1: This project is really interesting. It's a small, portable device that passively listens for Wi-Fi signals that are characteristic of Flock Safety automated license plate reader cameras.
+
+HOST 2: It uses an ESP32 in a mode where it's just monitoring Wi-Fi traffic, not connecting to anything. It looks for specific signatures in the packets that have been documented as being from those cameras. If it finds a match, it gives an alert.
+
+HOST 1: The build itself is very accessible. The brief says it costs around 9 to 11 dollars, there's a solderless option, and you can add GPS for mapping where you find these signals.
+
+HOST 2: This is such a cool intersection of citizen science and privacy. It's a hands-on way to learn about passive Wi-Fi analysis and how devices can be identified by their traffic patterns, even without connecting to them.
+
+HOST 1: It definitely sparks a conversation. Next, for the more advanced makers, we have Project Hydra. This is an open, 1 Watt LoRa PCB for Meshtastic.
+
+HOST 2: And to be clear, this isn't a finished product, it's a set of open-source design files in KiCad. It's a schematic and PCB layout for a minimal, high-power LoRa board.
+
+HOST 1: A full 1 Watt of power, designed specifically for the Meshtastic network, which is that open-source, off-grid messaging project. The license is GPL-3.0.
+
+HOST 2: So the value here is that it's an editable reference design. Makers interested in RF can study it to understand RF layout, or adapt it for their own custom Meshtastic nodes. It’s a starting point for building some serious long-range communication hardware.
+
+HOST 1: Absolutely, with the big caveat that you have to check your local regulations before transmitting at 1 Watt.
+
+HOST 2: Very important point. Okay, that takes us to our dedicated ESP32 category. And we start with a Gesture-Controlled ESP32 Glove for 3D Building.
+
+HOST 1: This is called "Aloft," and it's a glove that lets you do 3D modeling on a phone or in a browser using hand gestures.
+
+HOST 2: It's packed with tech. It uses MPU-6050 IMU sensors to track hand motion and orientation. That sensor data is processed by two ESP32 boards on the glove.
+
+HOST 1: Then, all that data is sent via Bluetooth to a paired phone or computer. The user can tilt their hand to move an object on the X, Y, or Z axes, and use pointing and tapping gestures to place shapes in the 3D app.
+
+HOST 2: It's a really sophisticated human-computer interface project. It's a great look at how you combine multiple sensors to capture complex movement and create a totally novel wireless input device. Very inspiring stuff for anyone into wearables or VR.
+
+HOST 1: For sure. Next, another great "data appliance" project: an ESP32-S3 Bambu Lab Printer Monitor.
+
+HOST 2: Yes! This is a small, standalone device with a color screen that you put next to your Bambu Lab 3D printer, and it just shows you the real-time status.
+
+HOST 1: It connects the ESP32-S3 to your network and uses MQTT to subscribe to the printer's status updates. You can connect over your local LAN or through the cloud service.
+
+HOST 2: It displays all the key info you’d want on its ST7789 TFT screen – temperatures, print progress, any events. Setup is done through a web browser, and there's even an optional buzzer for alerts.
+
+HOST 1: Just like the aircraft radar, it's about creating a dedicated physical display for a data stream. And it's a fantastic introduction to MQTT, which is the cornerstone of so much IoT and home automation.
+
+HOST 2: It really is. And our last ESP32 project is another one from the world of wireless detection. It's called "How FlipDeFlock Maps Nearby Surveillance Signals."
+
+HOST 1: This is like the Flock detector we mentioned earlier, but on steroids. It uses a Flipper Zero paired with an ESP32 for some pretty advanced wireless intelligence gathering.
+
+HOST 2: The ESP32 is doing the heavy lifting of passive listening. It scans for Wi-Fi probe requests to fingerprint cameras, even if they use randomized MAC addresses. But it doesn't stop there.
+
+HOST 1: Right, it also listens for other signals like Remote ID from drones, and Bluetooth Low Energy broadcasts to get more context about what devices are nearby. The Flipper Zero seems to act as the user interface for it all.
+
+HOST 2: It's a real lesson in digital forensics. It shows that you can identify devices by *how* they communicate, not just what they say. Even with privacy tech like MAC randomization, devices can still leak identifiable information.
+
+HOST 1: A fascinating, deep dive for anyone into security and RF. Alright, let's wrap up with a few Quick Hits from other categories.
+
+HOST 2: First is an IoT project called WiFi Sensing, which turns routers into room monitors. The project is "RuView."
+
+HOST 1: This is wild. It's an open-source project that uses your existing Wi-Fi router signals to sense human presence and activity in a room *without* cameras.
+
+HOST 2: It analyzes the disturbances and reflections in the Wi-Fi radio waves to estimate things like presence, movement, and even breathing and heart rates. All without any wearable devices. It introduces this concept of using Channel State Information, or CSI, as a sensing medium.
+
+HOST 1: It's definitely cutting-edge stuff. A high-concept project that really makes you rethink what's possible with the radio waves all around us.
+
+HOST 2: Next, a Raspberry Pi project: Build a Raspberry Pi MQTT Hub with Mosquitto.
+
+HOST 1: This is a foundational project. It's a guide to setting up a Raspberry Pi as a central MQTT server, or "broker," for all the smart devices on your local network.
+
+HOST 2: Once it's running, your ESP32s or other IoT devices can all publish their data to the Pi, and subscribe to data from it. It's the central hub so devices don't need to know about each other. The guide even mentions using a tool called MQTT Explorer to monitor the traffic.
+
+HOST 1: If you're serious about home automation, you have to do this. It’s the key to a private, robust, and interoperable smart home, and it’s what lets tools like Home Assistant really shine.
+
+HOST 2: Absolutely. And our final project this week is from the world of 3D printing: Set Up Automatic Multi-Color Printing on a QIDI Q2.
+
+HOST 1: This is a practical walkthrough for using one of those add-on systems that lets a single-nozzle printer use multiple colors. It uses a box that holds four different spools of filament.
+
+HOST 2: The guide covers the whole process. Using the QIDI Studio slicer to assign colors and generate the right G-code, and then how the printer manages the process—unloading filament, purging the nozzle into a "waste tower," and loading the next color.
+
+HOST 1: And I think the most valuable part is that it also covers how to handle real-world problems, like what to do when a filament change fails mid-print. That kind of information is priceless when you're attempting a long, complex multi-color print.
+
+HOST 2: Totally. And that's all the builds we have for this week's issue. Another fantastic collection of projects.
+
+HOST 1: It really is. To get links to every single project we talked about today, and to see new ones like these every week, make sure you subscribe to the free weekly TinkerNews newsletter at tinkernews.com.
+
+HOST 2: That's T-I-N-K-E-R-N-E-W-S dot com. The next issue will land right in your inbox this Sunday. Thanks for listening
