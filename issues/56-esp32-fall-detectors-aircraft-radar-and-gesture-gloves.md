@@ -109,7 +109,7 @@ A Raspberry Pi can serve as the local message hub for ESP32s, Shelly devices, an
 ## Recommended reads for makers
 
 - [Python on Microcontrollers](https://www.adafruitdaily.com/?utm_source=rec&utm_campaign=issue-56): Adafruit's daily CircuitPython and microcontroller newsletter, the canonical source for the Python side of the boards we cover.
-- [The Bootloader](https://thebootloader.com/?utm_source=rec&utm_campaign=issue-56): Nadia and Greg's maker podcast, the listen that pairs with our weekly builds.
+- [The Bootloader](https://www.thebootloader.net/?utm_source=rec&utm_campaign=issue-56): Paul Cutler and Tod Kurt's podcast from the maker and CircuitPython communities, the listen that pairs with our weekly builds.
 - [Hardware FYI](https://hardwarefyi.com/?utm_source=rec&utm_campaign=issue-56): hardware news for the people who actually build with it.
 
 ---
