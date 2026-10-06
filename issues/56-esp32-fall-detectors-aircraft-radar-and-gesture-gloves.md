@@ -106,6 +106,12 @@ A Raspberry Pi can serve as the local message hub for ESP32s, Shelly devices, an
 
 **Source →** [raspberry.tips](https://raspberry.tips/en/smart-home/mqtt-raspberry-pi-mosquitto)
 
+## Recommended reads for makers
+
+- [Python on Microcontrollers](https://www.adafruitdaily.com/?utm_source=rec&utm_campaign=issue-56): Adafruit's daily CircuitPython and microcontroller newsletter, the canonical source for the Python side of the boards we cover.
+- [The Bootloader](https://thebootloader.com/?utm_source=rec&utm_campaign=issue-56): Nadia and Greg's maker podcast, the listen that pairs with our weekly builds.
+- [Hardware FYI](https://hardwarefyi.com/?utm_source=rec&utm_campaign=issue-56): hardware news for the people who actually build with it.
+
 ---
 
 Full issue: https://www.tinkernews.com/issues/56-esp32-fall-detectors-aircraft-radar-and-gesture-gloves · Subscribe: https://www.tinkernews.com
