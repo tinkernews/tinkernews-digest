@@ -1,0 +1,95 @@
+HOST 1: Welcome to the TinkerNews podcast, the audio edition of TinkerNews, the free weekly newsletter that curates the best DIY electronics builds on the web, over at tinkernews.com.
+
+HOST 2: That's right. We've got another great issue for you this week, Issue #57. And we are starting with... a duck.
+
+HOST 1: Not just any duck! This is the XGO-Duck, an open-hardware, 3D-printable bipedal robot. It's designed specifically for motion experiments.
+
+HOST 2: And when they say motion experiments, they mean it. This isn't a simple wheeled rover. It’s actuated by fifteen serial servos. Fifteen!
+
+HOST 1: That’s a lot of coordination. A central controller board is wired up to all of them, and it even has a browser-based interface for calibration and control.
+
+HOST 2: I love that. The whole point of this isn't just to make a walking duck, but to use it as a platform for reinforcement learning—to actually teach it how to balance and walk. It's a really accessible way to get into some seriously complex robotics.
+
+HOST 1: Absolutely. From ducks to oscilloscopes. This next one is for anyone who owns a FNIRSI 2C53T digital scope and is... maybe not a fan of the factory software.
+
+HOST 2: Oh, this is a masterclass. It’s a complete, custom, open-source firmware replacement. Someone reverse-engineered the device's hardware from scratch to build this.
+
+HOST 1: That's some serious dedication. The new firmware directly controls the AT32 microcontroller and configures the Gowin FPGA to capture and render waveforms, completely replacing the buggy original software.
+
+HOST 2: There is a big warning label on this one, though. The brief says flashing it is high-risk and you could lose your calibration data or even brick the device. But what a power move—reclaiming a piece of commercial hardware to make it better.
+
+HOST 1: It really is. Okay, next up, we're taking the ESP32 out of the lab and putting it under the hood of a car.
+
+HOST 2: This is the OpenHaldex-S3, a DIY controller for the Haldex all-wheel-drive systems you find in Volkswagen Auto Group vehicles.
+
+HOST 1: It uses an ESP32-S3 board with custom, MIT-licensed firmware. You connect it to the vehicle with an inline harness, and it gives you this amazing browser-based interface for diagnostics, logging, and even performance tuning.
+
+HOST 2: This is exactly why makers are so amazing. It takes a proprietary, black-box system in a car and cracks it open for enthusiasts to inspect and control. And just a note, this is the open project, not to be confused with a newer, proprietary app with a similar name.
+
+HOST 1: Good clarification. Sticking with robotics, our next build is called Linorobot2, and it’s all about building the hardware base for a mobile robot that integrates with ROS 2.
+
+HOST 2: Right, the Robot Operating System 2. This is so useful because it bridges the gap between simple microcontrollers and that powerful, industry-standard ecosystem.
+
+HOST 1: It uses either an ESP32 or a Raspberry Pi Pico to handle the low-level stuff—the motor control and odometry, which is tracking the wheel movement.
+
+HOST 2: And that little board then communicates with the main ROS 2 system over USB or Wi-Fi. It even supports Over-the-Air updates. It's a perfect building block for someone wanting to build a serious autonomous robot with familiar, low-cost hardware.
+
+HOST 1: Next up is a real classic electronics project: a DIY Arduino Metal Detector.
+
+HOST 2: But it’s more advanced than you might think. The sensor is a hand-wound coil that's part of a paired oscillator circuit. When metal gets near the coil, it causes a tiny frequency shift.
+
+HOST 1: And the Arduino is precise enough to measure that shift. But the really cool part is the software—it can analyze the signal to classify a target as likely ferrous or non-ferrous and even estimate its depth.
+
+HOST 2: Yeah, it shows the results right on an LCD screen. It’s a great example of using basic components for some pretty sophisticated analog sensing.
+
+HOST 1: From sensing things in the ground to controlling things on the wall. This next project, Tessera, is a system for turning low-cost ESP32 touchscreens into dedicated Home Assistant panels.
+
+HOST 2: This is so practical. I know a lot of people want dedicated room controllers. This uses a Home Assistant add-on called "Screen Manager" to design one shared dashboard layout.
+
+HOST 1: And then you just deploy that layout over the network to all your ESP32-based color touchscreens. Each panel can then control lights, climate, media, whatever entities you've set up.
+
+HOST 2: It’s a really polished solution. You get that custom, built-in look without having to code custom firmware for every single panel in your house.
+
+HOST 1: Speaking of custom firmware, this next one is in a similar vein to the OpenScope project. It's a mod for the GeekMagic SmallTV.
+
+HOST 2: Right, that little desktop device with a color screen. This project completely replaces the stock software, turning it into a customizable Wi-Fi dashboard.
+
+HOST 1: The new firmware connects to Wi-Fi and gives you a web interface for all the configuration and even for wireless updates. The same code supports several ESP variants, too.
+
+HOST 2: And you can set it up to display all kinds of useful info—stock prices, Claude API usage, or even data on nearby aircraft. It takes what's essentially a novelty gadget and turns it into a genuinely practical information display.
+
+HOST 1: From novelty gadgets to industrial-grade hardware. We've got open-source firmware for a Waveshare industrial I/O board.
+
+HOST 2: This is cool. It takes that rugged Waveshare ESP32-S3 board and turns it into a super versatile, network-connected controller. It's designed to leverage the hardware's best features, like its isolated inputs and outputs, and its Ethernet port.
+
+HOST 1: And the software support is incredible. It adds MQTT, Modbus RTU, and CAN bus protocols. It has a web interface for settings, and you can even run local automation rules written in JavaScript.
+
+HOST 2: It even has an optional Matter build. This is the kind of project that really elevates the ESP32, taking it from a dev kit on a breadboard to a robust controller you could confidently use for serious workshop automation.
+
+HOST 1: Okay, let's go from industrial-strength to dead simple. The next project is a low-cost solar car.
+
+HOST 2: And it's about as direct as it gets. It's a small photovoltaic panel connected directly to a DC motor on a lightweight chassis. No batteries, no complex control electronics.
+
+HOST 1: Sunlight hits the panel, it generates current, the motor spins, and the car moves.
+
+HOST 2: It’s the perfect entry-level project for demonstrating the fundamentals of solar power. It's a great, hands-on way to experiment with panel angles, gearing, and friction. A perfect science fair build.
+
+HOST 1: Definitely. Now, for our second-to-last project, we're diving back into a specific chip feature: the ESP32-C6 RMT LED Driver.
+
+HOST 2: This solves a problem every maker who has used addressable LEDs has faced. The WS2812 protocol requires very precise, sub-microsecond timing, which can be unreliable if your microcontroller's CPU is busy doing other things.
+
+HOST 1: Exactly. This project shows how to use the ESP32-C6's dedicated RMT peripheral—that stands for Remote Control—to generate those signals in hardware.
+
+HOST 2: This means the timing is perfectly stable, even while the main CPU is tied up with FreeRTOS or the Wi-Fi stack. The project even outputs the frame timing to the serial console so you can verify it. It’s really the "correct" way to drive those LEDs reliably.
+
+HOST 1: A great little reference project. And finally, we have an ambitious one: OOMWOO, an open-source robot vacuum.
+
+HOST 2: The goal here is to build a robot vacuum from affordable, replaceable parts for around two hundred dollars. It's still a work-in-progress, but the design is very modular.
+
+HOST 1: It uses a Raspberry Pi for the main control board and breaks the vacuum down into separate components like drive modules, a caster, and the suction hardware.
+
+HOST 2: It’s a massive challenge to try and match the performance of commercial units, especially with navigation and cleaning, but I love the mission. Making a complex consumer appliance like this open and repairable is a fantastic goal.
+
+HOST 1: A great project to keep an eye on. And that wraps up all the builds from Issue #57 of TinkerNews.
+
+HOST 2: It was a packed issue. To make sure you don't miss awesome projects like these every week, you should subscribe to the free weekly TinkerNews newsletter. Just go to tinkernews.com—that's t-i-n-k-e-r-n-e-w-s dot com—and every Sunday's issue will land right in your inbox.

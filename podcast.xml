@@ -53,6 +53,14 @@
 <enclosure url="https://tinkernews.github.io/tinkernews-digest/audio/54-practical-builds-for-smarter-spaces.mp3" length="7750316" type="audio/mpeg"/>
 </item>
 <item>
+<title>TinkerNews #57: Duck Robots, OpenScopes, and ESP32 Haldex Controllers</title>
+<description>TinkerNews #57: Python GPIO Projects for Raspberry Pi LEDs and Buttons; Find and Reclaim Raspberry Pi Storage; Run Embedded Boards in Your Browser; Build a Low Cost Solar Car That Moves; OpenScope Replaces Buggy FNIRSI 2C53T Firmware; Build a ROS 2 Rover with ESP32 or Pico; Build an ESP32-S3 Haldex Controller for VAG Cars; Build a Printable Duck Robot for Motion Experiments; Arduino Metal Detector with Target Classification and Depth; Build Room by Room Home Assistant Touch Panels; Rewire a SmallTV for Stocks, Claude, and Planes; Turn Waveshare Industrial I/O Into a Network Controller; ESP32-C6 RMT Drives a Reliable WS2812 LED; ESP32 Arduino IDE Troubleshooting Checklist; Build an Open Source Robot Vacuum for $200; ESP32 Snake Game with MPU6050 and OLED; Tindie Blog; Circuit Cellar; WS2812B power calculator. 19 curated DIY electronics builds: ESP32, Arduino, Raspberry Pi, robotics, IoT. With source links and honest hardware notes. Full issue: https://www.tinkernews.com/issues/57-duck-robots-openscopes-and-esp32-haldex-controllers Free bench tools for these projects: pinout charts, code readers and calculators at tinkernews.com/tools.</description>
+<link>https://www.tinkernews.com/issues/57-duck-robots-openscopes-and-esp32-haldex-controllers</link>
+<guid isPermaLink="false">https://www.tinkernews.com/issues/57-duck-robots-openscopes-and-esp32-haldex-controllers</guid>
+<pubDate>Mon, 12 Oct 2026 09:00:00 +0000</pubDate>
+<enclosure url="https://tinkernews.github.io/tinkernews-digest/audio/57-duck-robots-openscopes-and-esp32-haldex-controllers.mp3" length="11445932" type="audio/mpeg"/>
+</item>
+<item>
 <title>TinkerNews #50: ESP32 Innovations: Clock, Weather, and Motion Projects</title>
 <description>TinkerNews #50: Create a Retro Macintosh Desk Clock; ESP32 Projects with Practical Applications; Build an ESP32 Smart Clock and Weather Station; ESP32 and PIR Sensor Integration. 4 curated DIY electronics builds: ESP32, Arduino, Raspberry Pi, robotics, IoT. With source links and honest hardware notes. Full issue: https://www.tinkernews.com/issues/50-esp32-innovations-clock-weather-and-motion-projects Free bench tools for these projects: pinout charts, code readers and calculators at tinkernews.com/tools.</description>
 <link>https://www.tinkernews.com/issues/50-esp32-innovations-clock-weather-and-motion-projects</link>
