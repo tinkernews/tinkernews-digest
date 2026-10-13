@@ -5,7 +5,8 @@
 <link>https://www.tinkernews.com</link>
 <description>Free weekly DIY electronics builds: the best ESP32, Arduino, Raspberry Pi, robotics and IoT projects on the web, walked through with honest hardware notes and source links. Maker builds, home automation, sensors, 3D printing and embedded tutorials. Free bench tools for the same work (pinouts, resistor, capacitor and SMD code readers, calculators) at tinkernews.com/tools. Every week.</description>
 <language>en</language>
-<itunes:image href="https://www.tinkernews.com/og-image.jpg"/>
+<itunes:image href="https://tinkernews.github.io/tinkernews-digest/cover-3000.jpg"/>
+<copyright>TinkerNews</copyright>
 <itunes:author>TinkerNews</itunes:author>
 <itunes:owner><itunes:email>info@tinkernews.com</itunes:email><itunes:name>TinkerNews</itunes:name></itunes:owner>
 <itunes:category text="Technology"/>
