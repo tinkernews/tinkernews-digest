@@ -1,8 +1,8 @@
 # TinkerNews Digest
 
-Curated DIY electronics builds — open source digest of the TinkerNews newsletter
+Curated DIY electronics builds: open source digest of the TinkerNews newsletter
 
-**Stats:** 10 issues · 100 builds
+**Stats:** 11 issues · 119 builds
 
 ## Issues
 
@@ -18,3 +18,6 @@ Curated DIY electronics builds — open source digest of the TinkerNews newslett
 | 54 | 2026-09-21 | Practical Builds for Smarter Spaces | 15 | [54-practical-builds-for-smarter-spaces.md](issues/54-practical-builds-for-smarter-spaces.md) |
 | 55 | 2026-09-28 | Buildable Bots, Smart Sensors, and Tiny Graphics | 14 | [55-buildable-bots-smart-sensors-and-tiny-graphics.md](issues/55-buildable-bots-smart-sensors-and-tiny-graphics.md) |
 | 56 | 2026-10-05 | ESP32 Fall Detectors, Aircraft Radar, and Gesture Gloves | 15 | [56-esp32-fall-detectors-aircraft-radar-and-gesture-gloves.md](issues/56-esp32-fall-detectors-aircraft-radar-and-gesture-gloves.md) |
+| 57 | 2026-10-12 | Duck Robots, OpenScopes, and ESP32 Haldex Controllers | 19 | [57-duck-robots-openscopes-and-esp32-haldex-controllers.md](issues/57-duck-robots-openscopes-and-esp32-haldex-controllers.md) |
+
+Newsletter: [tinkernews.com](https://www.tinkernews.com) · Free bench tools: [https://www.tinkernews.com/tools](https://www.tinkernews.com/tools)
