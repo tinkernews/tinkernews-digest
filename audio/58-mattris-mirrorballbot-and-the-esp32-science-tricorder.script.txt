@@ -1,0 +1,195 @@
+HOST 1: Welcome to the TinkerNews podcast, the weekly audio edition of TinkerNews.
+
+HOST 2: That's right, we're the aural version of the free weekly newsletter that curates the best DIY electronics builds from all over the web, which you can find at tinkernews.com.
+
+HOST 1: We’ve got a packed issue this week, number 58. Let's start with a classic: the MatTris Pocket Tetris Arcade.
+
+HOST 2: Oh, I love this. It's a self-contained, tabletop arcade for a Tetris-like game. It’s got that finished-product feel.
+
+HOST 1: Exactly. It uses an Arduino-compatible controller for the logic, and the playing field is a nice, bright LED matrix. And of course, it has physical buttons.
+
+HOST 2: The best part is the documentation. A full 21-step guide covering everything from the enclosure to the code. It makes a project like this really accessible.
+
+HOST 1: From a tabletop arcade to a robot that could balance on a tabletop. This is the MirrorBallBot.
+
+HOST 2: This one is wild. It's a self-balancing robot that moves on a single large sphere. No wheels.
+
+HOST 1: It's a Raspberry Pi project. It uses a camera for feedback and has motorized rollers on top of the ball. The Pi runs Python software to spin those rollers and keep the whole thing balanced.
+
+HOST 2: Which is a classic robotics challenge! The write-up shows it finger-following, recovering from pushes, and even navigating paths. It's a fantastic reference build for advanced robotics.
+
+HOST 1: Speaking of advanced builds, how about a dream project for a lot of makers: an Open Source ESP32 Science Tricorder.
+
+HOST 2: Yes! A real, handheld, multi-sensor scientific instrument. It’s built around an ESP32 in this great 3D-printed cyberdeck-style case.
+
+HOST 1: The sensor loadout is what gets me. It has a microspectrometer, a magnetometer, and a bunch of custom sensor boards.
+
+HOST 2: And it's truly open source. The repository has everything: the firmware, the PCB layouts, the 3D print files, assembly guides… a complete package for building a portable science tool.
+
+HOST 1: Sticking with the ESP32, but on a much simpler scale, we have an ESP32 SHT41 Temperature and Humidity Monitor.
+
+HOST 2: This is a perfect building block project. It’s just an ESP32 and a Sensirion SHT41 sensor talking over a four-wire I2C connection.
+
+HOST 1: That SHT41 is a great little sensor – factory-calibrated, low power. You can just hook it up and get accurate readings in the Arduino IDE's Serial Monitor or on a little OLED screen.
+
+HOST 2: It’s a great starting point for beginners, and a solid base for any bigger environmental sensing project.
+
+HOST 1: And here’s one of those bigger projects: an ESP32 Smart Bin that tracks its own fill level.
+
+HOST 2: I love this. It’s a clear, practical, end-to-end IoT application. It uses an HC-SR04 ultrasonic sensor inside the lid to measure the distance to the trash.
+
+HOST 1: The ESP32 calculates the fill level from that data and then uses Wi-Fi to send alerts over MQTT to a central dashboard.
+
+HOST 2: It's just a perfect example of a complete system: sensing, wireless communication, and data visualization to solve a real problem.
+
+HOST 1: Here’s another practical ESP32 build. This is an ESPHome Bridge for JK-BMS battery data.
+
+HOST 2: This is so useful for anyone with a DIY power setup. It gets data out of those JK Battery Management Systems and into Home Assistant.
+
+HOST 1: Right. The ESP32 sits between the BMS and your network, communicating with it over either UART-TTL or Bluetooth Low Energy to read all the pack and cell data.
+
+HOST 2: And because it’s using ESPHome, it exposes all that information beautifully to Home Assistant for custom dashboards and alerts, without messing with the BMS's safety functions.
+
+HOST 1: Okay, how about this one for an ESP32 networking project: a Wi-Fi to Ethernet Router.
+
+HOST 2: This is a clever utility. It lets you share a Wi-Fi connection with a device that only has an Ethernet port.
+
+HOST 1: The hardware is an ESP32 paired with a W5500 Ethernet interface chip. The ESP32 connects to Wi-Fi, and then its software stack creates a whole separate wired LAN.
+
+HOST 2: It even provides services like DHCP and NAT, and has an option for WireGuard protection. It’s perfect for home labs or connecting older gear to a modern network.
+
+HOST 1: Let's get into security. The HaleHound CYD is a wireless security toolkit.
+
+HOST 2: And it runs on one of those super cheap, like $7, "Cheap Yellow Display" ESP32 boards.
+
+HOST 1: The firmware transforms that board into a handheld tool with a touchscreen interface for launching over 40 different wireless security modules.
+
+HOST 2: The setup is really easy too, with browser-based flashing. It's an incredibly low-cost way to get a portable security tool.
+
+HOST 1: And for our audio fans, here's an ESP32 Audio Bridge for vintage Beolab speakers.
+
+HOST 2: This is a great case study. Those speakers have specific signal level requirements, so you can't just plug modern sources into them.
+
+HOST 1: This project uses an ESP32-S3 to process digital audio. It does 32-bit audio processing and careful signal attenuation to create a quieter signal that's safe for the speakers.
+
+HOST 2: What I love is that the write-up details all the real-world challenges, like power supply noise and debugging audio task underruns. It’s a fantastic lesson in mixed-signal design.
+
+HOST 1: Here's a project that is all about those real-world challenges. It's called "ESP32 Field Camera: A Reality Check."
+
+HOST 2: Ah, I appreciate this kind of write-up. It's a project to build and deploy a connected field camera using an ESP32-S3 and an OV5640 camera.
+
+HOST 1: The system has the camera talking to a custom Flutter app on an Android phone, which then sends images to a cloud AI.
+
+HOST 2: But the focus isn't on the "hello world" part. It’s a dose of reality about communication reliability, image quality, and code maintenance when a project actually leaves the workbench. A very valuable read.
+
+HOST 1: Let's scale way, way up. M3-CRETE is a meter-scale 3D paste printer.
+
+HOST 2: For printing with things like concrete. This is an open-source reference design for the machine's frame and control system.
+
+HOST 1: It's important to note the scope here. It only covers the mechanical and low-voltage parts. The project explicitly leaves the high-risk electrical work and material science up to the builder.
+
+HOST 2: Definitely one for experienced teams with a proper facility, but it's an amazing starting point for large-scale additive manufacturing.
+
+HOST 1: Okay, time for some Halloween builds! First up, a Self-Contained PIR Trigger for props.
+
+HOST 2: A simple, reusable module. It's a little 3D-printed box with an HC-SR501 PIR sensor powered by a 9V battery.
+
+HOST 1: And it uses a PC817 optocoupler to trigger the prop. That's a great detail – it acts as an isolated switch, so you can safely interface with your animatronic's wiring. A real best practice.
+
+HOST 2: Next is the Knock Activated Monster Box. This is so cute.
+
+HOST 1: It's a kid-friendly prop. You knock on the box, and a servo-controlled "monster" pops out.
+
+HOST 2: The tech is simple but so instructive. It uses an electret microphone with a single-transistor amplifier. An Arduino listens for the peak from the knock and then commands the servo.
+
+HOST 1: It's a perfect educational project. It teaches transistor biasing, AC coupling, threshold detection, and servo control all in one fun build.
+
+HOST 2: Back to the ESP32! This is the OnePage, a completely open-source e-reader.
+
+HOST 1: This is incredible. It’s a full project for a wireless handheld e-reader, centered on a specific ESP32 C61 board.
+
+HOST 2: The GitHub repo has everything you need. Firmware, 3D-printable enclosure files, even a board-specific SDK and browser-based development tools.
+
+HOST 1: It's so rare to see a project for a complex device this complete and this open. You can build, inspect, and modify every single part of it.
+
+HOST 2: Let’s talk test gear. This is a PYNQ-Z2 Mixed-Signal Oscilloscope.
+
+HOST 1: It turns a PYNQ-Z2 FPGA board into an oscilloscope, logic analyzer, and waveform generator.
+
+HOST 2: It uses a custom PCB for the analog front-end. The FPGA on the board handles all the high-speed data acquisition. Then you use a desktop software client to view the data.
+
+HOST 1: It's a dual-channel, 16-bit scope! That's a powerful piece of lab gear you can build yourself. A fantastic project for anyone interested in FPGAs and custom instrumentation.
+
+HOST 2: And if a meter-scale 3D printer wasn't ambitious enough, how about the RP1: an open source Humanoid Robot Stack.
+
+HOST 1: Yeah, this is for advanced robotics labs. It's not a kit, but a complete, open-source, reproducible reference design for a humanoid robot.
+
+HOST 2: And they mean complete. The repository has CAD files, joint designs, PCB layouts, firmware, control software, even machine learning tools.
+
+HOST 1: Its significance is really in its openness. An invaluable reference for anyone with the expertise to actually build something like this.
+
+HOST 2: Let's bring it back to the workbench with a very practical guide: Arduino Wired Ethernet with the ENC28J60.
+
+HOST 1: A classic problem! This is a tutorial on how to get that super low-cost Ethernet module working with an Arduino Nano.
+
+HOST 2: It connects over the SPI bus, and the guide focuses on all the specific "gotchas" that trip people up – correct wiring, chip-select settings, and choosing the right library. Super useful.
+
+HOST 1: And what if you run out of pins on your microcontroller? This project solves that: a 16-Channel GPIO Expander for the ESP32.
+
+HOST 2: Ah, the MCP23017 to the rescue. This is a compact board that uses that I²C GPIO expander chip to give you 16 extra channels.
+
+HOST 1: The board design is nice, too. Screw terminals for the channels, and you can daisy-chain up to seven other modules. It even has LEDs to indicate the board's I²C address.
+
+HOST 2: It's a well-designed utility that solves one of the most common project limitations.
+
+HOST 1: Here’s another great integration project: connecting a Zehnder ComfoAir Q ventilation unit to Home Assistant.
+
+HOST 2: This is a perfect example of bridging a proprietary appliance into an open smart home system. It uses an ESP32 and a CAN transceiver chip.
+
+HOST 1: You physically connect to the CAN bus on the ventilation unit, and an ESPHome project decodes the messages to get data and send commands for airflow control, all exposed to Home Assistant.
+
+HOST 2: It’s also a great practical guide to using CAN bus, which you see a lot in cars and industrial gear.
+
+HOST 1: Okay, this next one is just pure fun and a great showcase of new hardware. It’s called Pico2Arcade.
+
+HOST 2: It runs 13 classic games on a Raspberry Pi Pico 2, and the core components cost about five bucks.
+
+HOST 1: It's all running on that new RP2350 chip. It's powerful enough to handle the game logic, graphics for a small color display, sound, and input from physical switches, all while maintaining a claimed 60 frames per second.
+
+HOST 2: Sixty FPS on a five-dollar board is just a stunning demonstration of what that new microcontroller can do. Very impressive.
+
+HOST 1: Now for something that feels like the future of maker projects. This is ZeroClaw, a local AI assistant on a Raspberry Pi.
+
+HOST 2: This is a software framework. It’s a runtime written in Rust that lets you run a self-hosted AI agent that can interact with hardware.
+
+HOST 1: So you could give it a natural-language request like "turn on the light," and it translates that into an action, like toggling a GPIO pin connected to a relay.
+
+HOST 2: It can interface through GPIO, I2C, SPI, and USB. The user has to do the wiring and AI model setup, but this provides the software backbone for truly smart, locally-run devices.
+
+HOST 1: Let's get back to robots. Here's a PID Line Following Robot.
+
+HOST 2: The quintessential project for learning control theory. A row of IR sensors reads the line, and a PID—Proportional-Integral-Derivative—control algorithm calculates the speed adjustments for the two motors.
+
+HOST 1: It's just a fantastic educational tool. Watching the robot's movement gives you immediate, visual feedback on how you've tuned your PID loop.
+
+HOST 2: And if you want to apply that PID control to something else, here’s an Arduino PID Temperature Controller PCB.
+
+HOST 1: This is a custom PCB designed for an Arduino Nano Every. It's made for building a precise temperature controller for something like a reflow oven or a sous-vide machine.
+
+HOST 2: It has circuitry for reading high-precision PT100 and PT1000 temperature sensors and can switch two 5V Solid-State Relay outputs to control a heating element. The KiCad files are all there.
+
+HOST 1: It's a really robust hardware foundation for any project that needs stable temperature control.
+
+HOST 2: And for our last build, a fun one that combines a few popular modules: an ESP32 Motion-Controlled Snake Game.
+
+HOST 1: It’s the classic Snake game, but you control it by tilting the device. It uses an MPU6050 gyroscope and accelerometer module connected to an ESP32.
+
+HOST 2: The ESP32 reads the tilt data from the MPU6050 and uses that for directional input, and the game is displayed on a small OLED screen.
+
+HOST 1: A really fun project and a great introduction to using an IMU as a controller.
+
+HOST 2: Wow, that was a lot of builds. Another fantastic week of projects.
+
+HOST 1: Absolutely. And that's all the time we have for this episode. To find links to every single project we talked about today, and to discover more every week, you should subscribe to the free weekly TinkerNews newsletter.
+
+HOST 2: Just head over to tinkernews.com—that’s T-I-N-K-E-R-N-E-W-S dot com—and sign up. That way, every Sunday's issue will land right in your inbox.
