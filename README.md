@@ -2,7 +2,7 @@
 
 Curated DIY electronics builds: open source digest of the TinkerNews newsletter
 
-**Stats:** 11 issues · 119 builds
+**Stats:** 12 issues · 147 builds
 
 ## Issues
 
@@ -19,5 +19,6 @@ Curated DIY electronics builds: open source digest of the TinkerNews newsletter
 | 55 | 2026-09-28 | Buildable Bots, Smart Sensors, and Tiny Graphics | 14 | [55-buildable-bots-smart-sensors-and-tiny-graphics.md](issues/55-buildable-bots-smart-sensors-and-tiny-graphics.md) |
 | 56 | 2026-10-05 | ESP32 Fall Detectors, Aircraft Radar, and Gesture Gloves | 15 | [56-esp32-fall-detectors-aircraft-radar-and-gesture-gloves.md](issues/56-esp32-fall-detectors-aircraft-radar-and-gesture-gloves.md) |
 | 57 | 2026-10-12 | Duck Robots, OpenScopes, and ESP32 Haldex Controllers | 19 | [57-duck-robots-openscopes-and-esp32-haldex-controllers.md](issues/57-duck-robots-openscopes-and-esp32-haldex-controllers.md) |
+| 58 | 2026-10-19 | MatTris, MirrorBallBot, and the ESP32 Science Tricorder | 28 | [58-mattris-mirrorballbot-and-the-esp32-science-tricorder.md](issues/58-mattris-mirrorballbot-and-the-esp32-science-tricorder.md) |
 
 Newsletter: [tinkernews.com](https://www.tinkernews.com) · Free bench tools: [https://www.tinkernews.com/tools](https://www.tinkernews.com/tools)
