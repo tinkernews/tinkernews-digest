@@ -10,7 +10,7 @@
       <image:caption>Raspberry Pi 40-pin GPIO header chart, pins 1 to 40, with BCM numbers, power and ground pins and the I2C, SPI, UART and PWM functions of each GPIO</image:caption>
     </image:image>
     <image:image>
-      <image:loc>https://tinkernews.github.io/tinkernews-digest/charts/esp32-devkit-v1-pinout-1400.png</image:loc>
+      <image:loc>https://tinkernews.github.io/tinkernews-digest/charts/esp32-devkit-v1-pinout.png</image:loc>
       <image:title>ESP32 DevKit V1, 38 pins</image:title>
       <image:caption>ESP32 DevKit V1 38-pin chart, 19 pins per side, with strapping pins, ADC, touch and PWM tags, and the six flash pins GPIO 6 to 11 marked FLASH</image:caption>
     </image:image>
