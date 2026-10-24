@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Printable pinout charts: Raspberry Pi 40-pin and ESP32 DevKit V1</title>
+<meta name="description" content="Two free pinout charts you can print: the Raspberry Pi 40-pin GPIO header and the ESP32 DevKit V1, drawn from the board data and checked against the vendor documentation.">
+<link rel="canonical" href="https://tinkernews.github.io/tinkernews-digest/charts/">
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 32px 20px 64px;
+    background: #101520; color: #f5f7fa;
+    font: 17px/1.6 "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+  main { max-width: 880px; margin: 0 auto; }
+  h1 { font-size: 2rem; line-height: 1.15; margin: 0 0 12px; }
+  .lede { color: #c2cad8; margin: 0 0 40px; }
+  figure { margin: 0 0 56px; }
+  figure img {
+    width: 100%; height: auto; display: block;
+    border: 1px solid #2c3648; border-radius: 10px; background: #0d1119;
+  }
+  figcaption { margin-top: 14px; }
+  h2 { font-size: 1.25rem; margin: 0 0 8px; }
+  p { margin: 0 0 10px; }
+  .muted { color: #a8b2c2; }
+  a { color: #3dd684; }
+  .dl { font-size: .95rem; }
+  h3 { font-size: 1.05rem; margin: 40px 0 8px; }
+  ul { margin: 0 0 16px; padding-left: 22px; }
+  li { margin: 0 0 6px; }
+  footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid #2c3648; color: #a8b2c2; font-size: .95rem; }
+  @media print {
+    body { background: #fff; color: #000; padding: 0; }
+    h1, .lede, h3, ul, footer, .dl { display: none; }
+    figure { page-break-after: always; margin: 0; }
+    figure img { border: 0; }
+    figcaption h2, figcaption p { color: #000; font-size: 12pt; }
+  }
+</style>
+</head>
+<body>
+<main>
+<h1>Printable pinout charts</h1>
+<p class="lede">Two charts to print and pin above the bench. They come from the same
+board data as our pinout pages, and every pin was checked against the vendor
+documentation before it was drawn. Free, no sign-up, no watermark.</p>
+<figure>
+  <img src="raspberry-pi-40-pin-pinout.png" alt="Raspberry Pi 40-pin GPIO header chart, pins 1 to 40, with BCM numbers, power and ground pins and the I2C, SPI, UART and PWM functions of each GPIO" width="1600" height="2112" loading="lazy">
+  <figcaption>
+    <h2>Raspberry Pi 40-pin GPIO header</h2>
+    <p>Forty pins: 26 GPIO, 4 power, 8 ground. The BCM number in bold is what your code and every tutorial use. The small number at the end of each row is the physical pin, so GPIO17 on pin 11 and GPIO11 on pin 23 are two different pins that look alike at a glance.</p>
+    <p class="dl"><a href="raspberry-pi-40-pin-pinout.png" download>Download the PNG (1600 x 2112)</a>
+       &middot; <a href="https://www.tinkernews.com/boards/raspberry-pi-zero-2-w?utm_source=charts&utm_campaign=pinout_charts">Raspberry Pi Zero 2 W board page</a></p>
+  </figcaption>
+</figure>
+<figure>
+  <img src="esp32-devkit-v1-pinout-1400.png" alt="ESP32 DevKit V1 38-pin chart, 19 pins per side, with strapping pins, ADC, touch and PWM tags, and the six flash pins GPIO 6 to 11 marked FLASH" width="1600" height="2000" loading="lazy">
+  <figcaption>
+    <h2>ESP32 DevKit V1, 38 pins</h2>
+    <p>Nineteen pins a side. Six of them, GPIO 6 to 11, are wired to the SPI flash on the module. They really are on this header, and they have to stay unconnected. The FLASH tag is there so you see that before you wire anything, and ADC1 is the ADC to use while Wi-Fi is on.</p>
+    <p class="dl"><a href="esp32-devkit-v1-pinout-1400.png" download>Download the PNG (1600 x 2000)</a>
+       &middot; <a href="https://www.tinkernews.com/tools/esp32-pinout?utm_source=charts&utm_campaign=pinout_charts">ESP32 DevKit V1 pinout page</a></p>
+  </figcaption>
+</figure>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ImageGallery", "name": "Printable pinout charts", "url": "https://tinkernews.github.io/tinkernews-digest/charts/", "about": "Pinout charts for the Raspberry Pi 40-pin header and the ESP32 DevKit V1", "image": [{"@type": "ImageObject", "contentUrl": "https://tinkernews.github.io/tinkernews-digest/charts/raspberry-pi-40-pin-pinout.png", "name": "Raspberry Pi 40-pin GPIO header", "description": "Raspberry Pi 40-pin GPIO header chart, pins 1 to 40, with BCM numbers, power and ground pins and the I2C, SPI, UART and PWM functions of each GPIO", "width": 1600, "height": 2112, "creator": {"@type": "Organization", "name": "TinkerNews", "url": "https://www.tinkernews.com"}}, {"@type": "ImageObject", "contentUrl": "https://tinkernews.github.io/tinkernews-digest/charts/esp32-devkit-v1-pinout-1400.png", "name": "ESP32 DevKit V1, 38 pins", "description": "ESP32 DevKit V1 38-pin chart, 19 pins per side, with strapping pins, ADC, touch and PWM tags, and the six flash pins GPIO 6 to 11 marked FLASH", "width": 1600, "height": 2000, "creator": {"@type": "Organization", "name": "TinkerNews", "url": "https://www.tinkernews.com"}}], "publisher": {"@type": "Organization", "name": "TinkerNews", "url": "https://www.tinkernews.com"}}</script>
+<h3>How to read either chart</h3>
+<ul>
+  <li>The number at the end of each row is the physical pin. On the Pi, odd pins run
+      down the left and even pins down the right, and pin 1 is the square pad.</li>
+  <li>The bold label is the name your code uses. On the Pi those are BCM numbers, and
+      they do not match the physical position.</li>
+  <li>Small tags are the alternate functions the pin takes at boot: I2C, SPI, UART,
+      PWM, ADC, touch, strapping.</li>
+  <li>Orange is power, grey is ground, green is a GPIO you can drive.</li>
+</ul>
+
+<footer>
+<p>Charts by <a href="https://www.tinkernews.com?utm_source=charts&utm_campaign=pinout_charts">TinkerNews</a>,
+the free weekly DIY electronics newsletter. Print them, share them, put them in a
+club handout.</p>
+<p>If a pin disagrees with the silkscreen on your board, email
+<a href="mailto:info@tinkernews.com">info@tinkernews.com</a> with the board and the
+pin number. We fix the data and redraw the chart.</p>
+</footer>
+</main>
+</body>
+</html>
