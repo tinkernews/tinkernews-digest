@@ -2,7 +2,7 @@
 
 Curated DIY electronics builds: open source digest of the TinkerNews newsletter
 
-**Stats:** 13 issues · 167 builds
+**Stats:** 14 issues · 189 builds
 
 ## Issues
 
@@ -21,5 +21,6 @@ Curated DIY electronics builds: open source digest of the TinkerNews newsletter
 | 57 | 2026-10-12 | Duck Robots, OpenScopes, and ESP32 Haldex Controllers | 19 | [57-duck-robots-openscopes-and-esp32-haldex-controllers.md](issues/57-duck-robots-openscopes-and-esp32-haldex-controllers.md) |
 | 58 | 2026-10-19 | MatTris, MirrorBallBot, and the ESP32 Science Tricorder | 28 | [58-mattris-mirrorballbot-and-the-esp32-science-tricorder.md](issues/58-mattris-mirrorballbot-and-the-esp32-science-tricorder.md) |
 | 59 | 2026-10-26 | Wireless Relay Stations, ESP32 Audio Docks, and 5 GHz FPV Video | 20 | [59-wireless-relay-stations-esp32-audio-docks-and-5-ghz-fpv.md](issues/59-wireless-relay-stations-esp32-audio-docks-and-5-ghz-fpv.md) |
+| 60 | 2026-11-02 | Pocket Reflex, ISS Tracking, and E-Paper Adventures | 22 | [60-pocket-reflex-iss-tracking-and-e-paper-adventures.md](issues/60-pocket-reflex-iss-tracking-and-e-paper-adventures.md) |
 
 Newsletter: [tinkernews.com](https://www.tinkernews.com) · Free bench tools: [https://www.tinkernews.com/tools](https://www.tinkernews.com/tools)
