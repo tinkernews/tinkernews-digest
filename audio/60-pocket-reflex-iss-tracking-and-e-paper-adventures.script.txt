@@ -1,0 +1,163 @@
+HOST 1: Hello and welcome to the TinkerNews podcast! This is the audio edition of TinkerNews, a free weekly newsletter that curates the best DIY electronics builds on the web.
+
+HOST 2: You can find us at tinkernews.com. I'm excited for this week's issue, number 60. We've got a lot of tangible, interactive projects, and a whole lot of ESP32s doing just about everything.
+
+HOST 1: They really are everywhere. Let's dive right into the Arduino section, starting with a Pocket Reflex Console that plays three games.
+
+HOST 2: This one is so polished. It's a self-contained unit with an ESP32-C3 at its core. You've got two physical buttons for input, and for output, a round display and eight programmable RGB LEDs.
+
+HOST 1: And it’s all packed into a neat, 3D-printed PLA enclosure. The games sound fun too: Lightning Tap, Chase the Light, and a two-player Duel Mode. It's a perfect example of a complete project, from breadboard to finished product.
+
+HOST 2: Absolutely. Next up is another ESP32 project, but with a twist: an alarm clock that forces you to score a basket to turn it off.
+
+HOST 1: I need this in my life. So how does it work?
+
+HOST 2: There's an infrared beam across the miniature hoop. When the ball goes through, it breaks the beam, and an ESP32 detects that to silence the buzzer. It even uses Bluetooth Low Energy for the initial setup.
+
+HOST 1: That’s brilliant. The project notes say it deals with some real-world challenges, too, like sensor alignment and debouncing that IR sensor. And even making sure the BLE antenna has proper clearance on the custom PCB.
+
+HOST 2: Yeah, it's a great look into the less glamorous, but super important, parts of making something that actually works.
+
+HOST 1: Moving on to radio control, we've got an 8-Channel Arduino RC Link. This is a full DIY transmitter and receiver system.
+
+HOST 2: I love projects that demystify common tech. This one uses two Arduino Nano boards, one for the transmitter and one for the receiver. They talk to each other using those super common nRF24L01 radio modules.
+
+HOST 1: Right, so the transmitter reads your joysticks and switches, sends that data over the 2.4 GHz link, and the receiver spits out PWM signals to drive servos or an ESC.
+
+HOST 2: And what's great is that it's presented as a starting point. It leaves things like range testing, failsafe programming, and interference mitigation for the builder to explore. A true learning platform.
+
+HOST 1: Sticking with RC, how about a scratch-built RC car you can drive over the internet?
+
+HOST 2: This one has "infinite range," which is just so cool. It uses a tiny ESP-01 module on the car that connects to Wi-Fi.
+
+HOST 1: And it communicates through Google's Firebase, a real-time database. So, a phone app sends commands to Firebase in the cloud, and the ESP-01 on the car just reads them from there.
+
+HOST 2: The resourcefulness here is amazing. The chassis is hand-cut from PVC, and the front wheel pivots are made from pen refills. Pen refills! Powered by a 3S LiPo battery. It’s a great lesson in using what you've got.
+
+HOST 1: Our next one is a robot, a browser-controlled 12-DOF Spider Robot. Twelve degrees of freedom is a lot of movement.
+
+HOST 2: Three servos per leg, four legs... yep, twelve. And it uses a really smart dual-controller setup. An ESP32-C3 handles the high-level stuff – it runs a web server for the browser interface and handles Wi-Fi.
+
+HOST 1: And then it sends commands to an Arduino Nano, which does all the heavy lifting for motor control: managing the positions of all twelve servos, calculating the foot positions, handling the gait timing...
+
+HOST 2: It's a classic distributed control architecture. Offload the web stuff to one chip so the other can focus on the time-sensitive, processor-intensive kinematics. It even has an OLED screen for animated eyes.
+
+HOST 1: That is a powerful pattern for any complex robotics project. Okay, last one in this section is a BLE Retail Display Timer and Tamper Alarm. This feels very professional.
+
+HOST 2: It really is. It’s a smart display stand built around an nRF52840 SoC running Zephyr RTOS. When a shopper lifts a product, a 90-second countdown starts.
+
+HOST 1: And if the product isn't returned, or if an internal sensor detects the whole display is being moved, an alarm goes off and it sends a BLE alert to nearby staff phones.
+
+HOST 2: The key here is that it’s all local. It doesn't need store Wi-Fi or any cloud services. It's a perfect example of a reliable, low-power commercial-grade device. A great project for someone wanting to move from hobby stuff to product development.
+
+HOST 1: Alright, let's move on to the DIY Electronics section. First up is MatTris Arcade, which packs six games into 280 LEDs.
+
+HOST 2: This thing is beautiful. It's a tiny arcade cabinet in a tinted acrylic case. At the heart is an RP2040 Tiny, driving a 14 by 20 RGB LED matrix. That's your 280 LEDs.
+
+HOST 1: Six buttons for input, a rechargeable battery, custom PCB... and it plays Tetris, Snake, Pong, Breakout, Car Dodge, and Space Invaders. This is just a perfectly integrated, polished project.
+
+HOST 2: Totally. It’s pure inspiration for anyone wanting to build a fun, portable electronic gadget.
+
+HOST 1: Now for our ESP32 section, starting with a foundational tutorial: how to draw icons and scroll text with a MAX7219 matrix.
+
+HOST 2: A true classic. These 8x8 LED matrices are cheap and a great way to make a display. The tutorial shows how an Arduino or ESP32 can talk to the MAX7219 driver chip using a 3-wire SPI protocol.
+
+HOST 1: It highlights two key libraries: MD_MAX72XX for drawing graphics and controlling individual LEDs, and MD_Parola for creating those cool scrolling text effects across chained modules.
+
+HOST 2: The guide also has a really important warning: if you use a 3.3-volt ESP32 with the 5-volt MAX7219, you need level shifting. And you should keep the brightness low if you're powering it from a computer's USB port. Good, practical advice.
+
+HOST 1: Definitely. Next, a very different kind of ESP32 project. This one replaces the cloud-based Telematics Control Unit in a Nissan Leaf.
+
+HOST 2: This is a fantastic "right to repair" project. The original NissanConnect EV cloud service was shut down, so this maker built a replacement called simppeliTCU to restore remote control functions.
+
+HOST 1: How does it work?
+
+HOST 2: It uses a LilyGO T-2CAN board, which is an ESP32 with a CAN bus transceiver already on it. It connects directly to the car's CAN bus to read data and send commands for things like climate control.
+
+HOST 1: And then it provides access locally over Wi-Fi and integrates with home automation systems like Home Assistant via MQTT. The brief does note this is for experienced builders, given the risks of messing with car wiring.
+
+HOST 2: For sure. But it's an amazing look at automotive hacking, the CAN bus, and how to rescue a device from a dead cloud service.
+
+HOST 1: Moving into our IoT section, we have an Arduino 4WD Robot that does Wi-Fi Radar Mapping.
+
+HOST 2: This is a great entry point into autonomous robotics. It’s a four-wheel-drive robot chassis with four of those common yellow TT motors. The brain is an Arduino UNO R4 WiFi.
+
+HOST 1: It maps its environment using an HC-SR04 ultrasonic sensor mounted on a servo. The servo pans back and forth, the sensor takes distance readings, and the Arduino sends all that data over Wi-Fi to a web browser, which renders a 2D map.
+
+HOST 2: Kind of a SLAM-like approach. One really important practical detail they highlight is using separate batteries for the motors and the controller board to prevent electrical noise issues. A crucial lesson for robot builders.
+
+HOST 1: Absolutely. Next up is an ESP32 TinyML Vibration Monitor for predictive maintenance.
+
+HOST 2: This is so cool. You attach it to a machine, and an MPU6050 accelerometer measures vibrations. An ESP32 runs a locally trained TinyML model—specifically, a compact autoencoder.
+
+HOST 1: So the model learns the machine's "normal" vibration pattern, and if it detects a new pattern, it flags it as an anomaly that could mean there's a fault developing.
+
+HOST 2: And the key is that all the inference happens locally on the ESP32. No cloud connection needed, no pre-labeled fault data. It just learns what's normal and looks for what isn't. It can send alerts via MQTT or a local indicator.
+
+HOST 1: That makes on-device AI really accessible. It’s a huge step up from just using a simple sensor threshold.
+
+HOST 2: For sure. Sticking with home automation, we have an ESP32 Home Assistant Touchscreen Panel.
+
+HOST 1: This solves a problem I think a lot of us have: needing a simple, dedicated control panel that isn't your phone. It's a wall-mountable touchscreen powered by an ESP32.
+
+HOST 2: It connects to your local 2.4 GHz WiFi and talks directly to your Home Assistant instance. The really neat part is that you flash the firmware and configure the display layout and controls—for lights, sensors, cameras—all from a web page.
+
+HOST 1: It's a super practical project that lets you build your own custom control panel for a room without buying expensive proprietary gear.
+
+HOST 2: Our last IoT project is "Gestire," an ESP32-powered smart locker for shared lab equipment.
+
+HOST 1: This is a full-stack system. A user reserves equipment like an FPGA board using a Flutter mobile app. A backend server, running Flask with a SQLite database, generates a six-digit PIN.
+
+HOST 2: Then the user goes to the locker, types the PIN into a keypad connected to an ESP32. The ESP32 validates the PIN, shows instructions on an LCD, and energizes a relay to unlock the right compartment.
+
+HOST 1: What a comprehensive project. It covers the embedded hardware, the mobile app, and the web backend. The creator even points out potential improvements, like adding sensors to confirm the equipment is actually in the locker, which is great for learning.
+
+HOST 2: Okay, on to the Raspberry Pi section. First, a tutorial on giving a Raspberry Pi Pico precise stepper motion.
+
+HOST 1: This is another one of those foundational skills. It shows how to control a 28BYJ-48 stepper motor, which is super common and cheap, using a Pico running MicroPython.
+
+HOST 2: The Pico sends step sequences to a ULN2003 driver board, which powers the motor coils. They provide a MicroPython library that makes it easy, with commands to move a certain number of steps or to a specific angle.
+
+HOST 1: And more good practical advice: use external power for the motor, not the Pico's power, and think about adding a home sensor for real applications like a camera slider.
+
+HOST 2: Next is a project with a huge "wow" factor: a Raspberry Pi Dish that tracks the International Space Station.
+
+HOST 1: This is amazing. A Raspberry Pi Zero W is the brain. It pulls ISS pass predictions and orbital data from the internet. It even checks local cloud cover data!
+
+HOST 2: Then, in real-time, it calculates the required azimuth and altitude angles and drives two stepper motors to point a dish antenna right at the ISS as it flies overhead.
+
+HOST 1: That is a phenomenal systems integration project. You've got API calls, math, motor control, all working together to physically track an object in orbit. So cool.
+
+HOST 2: Next up, something really unique: InkQuest, which puts text adventures on an e-paper screen.
+
+HOST 1: This is a handheld device powered by an ESP32-C3. You use a rotary encoder to play an interactive text adventure that's generated by an AI.
+
+HOST 2: When you make a choice, the ESP32 sends the story context to the Gemini AI model via an API call. Gemini sends back four new choices, and the ESP32 displays them on that low-power e-paper screen.
+
+HOST 1: I love the combination of tech here. The e-paper display for that book-like feel, the ESP32 for low-power connectivity, and generative AI for endless content. It even has a 20-hour estimated battery life.
+
+HOST 2: And our last Pi project is a guide to running the Gemma 4 AI model locally on a Raspberry Pi 5 with just 4 gigabytes of RAM.
+
+HOST 1: This shows how powerful these single-board computers are getting. The guide walks through setting up the software to run the model completely offline.
+
+HOST 2: The numbers are impressive. The Gemma 4 model uses about 1.6 gigs of RAM, and the Pi 5 can run it at a speed of roughly 8 tokens per second. That's totally usable, with no special AI hardware or cloud subscription.
+
+HOST 1: It opens up so many possibilities for private, responsive, AI-powered projects on affordable hardware.
+
+HOST 2: Okay, one last section: Robotics. And we have an ESP32 Board specifically for a Robot Fox.
+
+HOST 1: This isn't the robot itself, but a custom-designed controller board for a 3D-printed quadruped. It’s a PCB design project.
+
+HOST 2: Right. The board is built around an ESP32 and has everything you'd need: ten servo headers for the legs, two DC motor connections, a connector for a TFT display, and various sensor inputs.
+
+HOST 1: And the creator provides all the files – the schematic, the Gerbers for getting the PCB made, even a test sketch. It's an incredible resource for anyone who wants to design their own custom electronics for a robot instead of using a breadboard.
+
+HOST 2: It's the perfect template for taking a robotics project to the next level of integration.
+
+HOST 1: That wraps up another amazing issue. So many great builds, from tiny games to tracking satellites.
+
+HOST 2: It's always inspiring to see what the community is building. Makes you want to head straight to the workbench.
+
+HOST 1: It really does. Well, that's all the time we have for this episode. To make sure you don't miss any of these incredible projects, be sure to subscribe to the free weekly TinkerNews newsletter.
+
+HOST 2: Just head over to tinkernews.com — that's t-i-n-k-e-r-n-e-w-s dot com — and every Sunday's issue will land right in your inbox.
