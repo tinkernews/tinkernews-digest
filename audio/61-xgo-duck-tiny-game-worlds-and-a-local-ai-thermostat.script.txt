@@ -1,0 +1,165 @@
+HOST 1: Welcome to the TinkerNews podcast, the audio edition of TinkerNews.
+
+HOST 2: That’s the free weekly newsletter curating the best DIY electronics builds on the web, which you can find at tinkernews.com. I’m Host 2.
+
+HOST 1: And I’m Host 1. This week we’re covering Issue #61, and the theme is all about practical edge computing. We’ve got robotics, local AI, and a ton of smart home projects.
+
+HOST 2: Let’s kick it off with robotics. First up is a Browser-Controlled XGO Duck, running on an Arduino Uno Q.
+
+HOST 1: I love these little quadruped robots. So this isn't just a simple remote control; it's a full software runtime. The Uno Q's Linux side runs Python for high-level control...
+
+HOST 2: And it’s running pre-learned motion policies in ONNX format. That's a serious AI model format. Meanwhile, the STM32 microcontroller on the Uno Q handles all the real-time feedback loops.
+
+HOST 1: That’s a perfect use of that board's hybrid architecture. The Linux side does the heavy thinking, and the microcontroller side handles the deterministic, real-time stuff. The runtime even manages calibration and servo safety checks.
+
+HOST 2: Exactly. It's a fantastic, practical software stack for a complex robot. Next, we have something on the complete opposite end of the budget spectrum: a one-dollar-fifty FOC Board for a tiny 10-to-1 robot joint.
+
+HOST 1: A dollar fifty! That’s amazing. How do they do it?
+
+HOST 2: It’s a custom-designed, four-layer Field-Oriented Control board, or FOC board, paired with a small brushless gimbal motor. They’ve also designed a 3D-printed 10-to-1 planetary gearbox for it.
+
+HOST 1: So you get torque multiplication and precise control for almost no money. What’s the catch?
+
+HOST 2: The hardware design is open-source, which is great. But the firmware is currently open-loop. The brief says it requires "significant configuration to function as a dependable servo."
+
+HOST 1: Ah, the classic hardware/software divide. It's a great starting point, but a good reminder that the code is often the hardest part.
+
+HOST 2: Absolutely. And for our last robotics project, we have MOSS: an Open-Source Litter-Picking Rover.
+
+HOST 1: Okay, this sounds ambitious. MOSS stands for Metro-cross Open-Source Scavenger. It's a 3D-printed tracked rover with a robotic arm, designed to follow a person and pick up litter.
+
+HOST 2: The current prototype is teleoperated, so a human is driving and controlling the arm. But the whole project is designed to be extensible. The hardware files are open-source, it supports different computer choices, and it even comes with simulation tools to help with development.
+
+HOST 1: That's huge for a project this complex. Having simulators makes development so much more accessible. It’s a substantial build for an experienced maker.
+
+HOST 2: Moving on to the Arduino section, and we’re sticking with the Uno Q. The first one is a foundational tutorial: Connecting the UNO Q’s Linux and STM32 Sides.
+
+HOST 1: This is essential reading for anyone who owns that board. It shows you how to pass data between the Debian Linux processor and the STM32 microcontroller.
+
+HOST 2: The example is really clear. You read a potentiometer on an analog pin with the STM32, send that value over to a Python script on the Linux side using the "Bridge" library...
+
+HOST 1: And then the Python script sends a command back to the STM32 to control the brightness of the built-in LED. It even shows how to add browser control using a WebSocket.
+
+HOST 2: It specifically calls out the `call()`, `notify()`, and `provide_safe()` functions in the Bridge library, explaining which one to use in different situations. It really demystifies the board's main feature.
+
+HOST 1: And that feature is put to great use in the next project: An Arduino UNO Q Runs a Local AI Thermostat.
+
+HOST 2: This is a perfect example of edge AI. A small language model runs entirely locally in a Python script on the Uno Q's Linux side.
+
+HOST 1: But the AI doesn't have direct control of the hardware. It's given a limited set of "tools" – in this case, reading a simulated temperature and controlling an LED fan. The actual hardware control is handled deterministically by a sketch on the STM32 side.
+
+HOST 2: That's such a smart and safe way to give an AI model agency. The microcontroller is always the final authority. Plus, the project includes performance metrics on startup delay, response speed, and memory usage. Invaluable stuff.
+
+HOST 1: Definitely. Okay, let’s move into a big section: DIY Electronics and the ESP32. First up is a Mecha Desk Buddy with a Touchscreen Face.
+
+HOST 2: This is so cool. It’s a 3D-printed desktop organizer that looks like a little robot. It has compartments for your phone, pens, SD cards... and its face is an animated touchscreen.
+
+HOST 1: The brain is an ESP32-S3, driving a 2.8-inch touchscreen. And the interface, which has blinking eyes and six different facial expressions, is all built with the LVGL 9 graphics library.
+
+HOST 2: Thirty-three individual 3D-printed parts! It’s a fantastic blend of practical printing and expressive electronics, and a great showcase for what LVGL can do on an ESP32.
+
+HOST 1: Sticking with expressive projects, next is Marelleo: An ESP32 Story Box for NFC Figurines.
+
+HOST 2: I love these kinds of projects. It’s a box for kids. You place a figurine with an NFC tag on it, and the box plays a specific story, song, or even a radio station associated with that tag.
+
+HOST 1: It uses an ESP32 with an NFC reader. But the best part of this project is the write-up. The creator documents the entire journey from breadboard to perfboard and finally to a custom PCB.
+
+HOST 2: Yeah, they talk about real-world problems like battery safety, mechanical failure points, and recovery testing. It's a great case study on how to turn a fragile prototype into a robust, usable object.
+
+HOST 1: It's so valuable to see that whole process. Now, for something completely different... Kube32: `kubectl` for ESP32 Clusters.
+
+HOST 2: This one is mind-bending. It’s a framework that lets you manage a cluster of ESP32s using standard Kubernetes tooling, like `kubectl`, to deploy WebAssembly apps.
+
+HOST 1: You’re kidding. Kubernetes on microcontrollers?
+
+HOST 2: Pretty much! One ESP32-S3 with PSRAM acts as a "control plane" to manage multiple "worker" boards. Kube32 then treats the hardware on those workers—displays, sensors, inputs—as manageable resources in the cluster.
+
+HOST 1: That is wild. It's bringing high-level, cloud-native concepts down to the embedded level. Definitely for advanced makers interested in distributed systems and IoT fleet management.
+
+HOST 2: For sure. But let's bring it back to basics with the next one: a Browser-Controlled ESP8266 Relay.
+
+HOST 1: The "Hello, World!" of IoT! This is a classic beginner project. A NodeMCU ESP8266 board hosts a simple webpage, and you can click a button on your phone or computer to toggle a relay.
+
+HOST 2: It’s a super simple Arduino sketch. What I really appreciate is that the project is very clear about its limitations. It states that it's not secure, it's for local access only, and it includes serious warnings about the dangers of wiring mains voltage.
+
+HOST 1: That’s so important. It makes it a responsible and educational starting point for anyone new to the ESP8266.
+
+HOST 2: Next, an ESP32-S3 Rotary Universal Timer. This is a very polished build.
+
+HOST 1: It's a physical, kitchen-style timer that uses a rotary encoder for input and a circular touchscreen for the display. The whole thing is built on a CrowPanel, which is an ESP32-S3 board.
+
+HOST 2: The user interface looks so satisfying. The key to the smooth display updates is using framebuffer drawing techniques, which is a great technical tip for anyone doing graphics on microcontrollers. An external buzzer provides the audio alert.
+
+HOST 1: That combination of a rotary encoder and a circular display is just so elegant. I love it.
+
+HOST 2: Last in this section is an Open ESP32-S3 Board Designed in KiCad.
+
+HOST 1: So this isn't a finished project, but a set of design files. The repository has everything you need to get your own custom ESP32-S3 board fabricated.
+
+HOST 2: Yep, it’s based on the ESP32-S3-WROOM-1-N8R8 module. You get the KiCad schematic, the PCB layout, the Bill of Materials, Gerbers... everything.
+
+HOST 1: That is an invaluable resource for anyone learning custom PCB design. You can study it, modify it, or just use it as a rock-solid foundation for your own board.
+
+HOST 2: Okay, on to IoT and Home Assistant. We have a lot of them this issue, and the common theme is definitely local control and integrating non-standard hardware.
+
+HOST 1: Right, let’s run through them. First is the NeonPlan 3D dashboard, a software project that lets you create a 3D model of your home to see and control your devices in their physical locations. Very cool UI concept.
+
+HOST 2: Then there's a hack to repurpose an old Amazon Echo for Home Assistant. It disconnects the Echo from the Alexa cloud and reroutes its far-field microphone array to Home Assistant Assist. High risk of bricking the device, but you get a great local voice assistant from cheap hardware.
+
+HOST 1: There's also House Control, which is a native Mac and iPhone app that creates a live 3D control surface from a JSON floor plan. It works with Home Assistant, Philips Hue, and Apple Home.
+
+HOST 2: We’ve got a couple of energy monitoring projects. One integrates a Marstek Venus E home battery using a LilyGO T-CAN485 board to read data over RS485.
+
+HOST 1: And another does something similar for Pylontech batteries, using a Wemos D1 Mini to create a Wi-Fi bridge for the battery's RS-232 console port, sending data via MQTT.
+
+HOST 2: Then there’s SpiderBridge, which I love. It uses a ten-euro ESP32 to intercept the Bluetooth control of a Spider Farmer hydroponics controller, allowing for fully local Wi-Fi control through Home Assistant and MQTT, bypassing the cloud entirely.
+
+HOST 1: Classic. And finally, a hardware hack that guts a cheap "HU-058D" Wi-Fi clock, replaces the internals with an ESP32, and turns it into a customizable display for Home Assistant data, reusing the case and RGB LED matrix.
+
+HOST 2: That's a great list. So much good stuff for smart home tinkerers. Now for our last section: Raspberry Pi.
+
+HOST 1: And we're starting with something on the very edge. A Pico 2 W Runs Its Own Tiny Game Worlds.
+
+HOST 2: This is a wild one. Five simple video games run on a Pico 2 W, but the game frames and actions are being decided in real-time by two neural networks running on the chip.
+
+HOST 1: On a Pico? How?
+
+HOST 2: Advanced optimization techniques. The brief mentions grid tokens, a reused transformer block, int8 weight quantization, and scheduling tasks across both cores of the Pico. It's a bleeding-edge demo of generative AI on a tiny microcontroller.
+
+HOST 1: The brief does say it struggles with anything more complex than simple games, but still, what a fascinating experiment.
+
+HOST 2: Totally. Next, something incredibly practical: a Raspberry Pi 5 Knowledge Box for Offline Use.
+
+HOST 1: This is a portable, self-contained server that provides access to Wikipedia, maps, medical guides, all with no internet connection. It runs on a Pi 5 with a fast NVMe SSD and hosts its own Wi-Fi hotspot.
+
+HOST 2: It uses software like Kiwix and Internet-in-a-Box. It's a modern, powerful take on the "information survival kit" idea. Perfect for emergency preparedness or just digital self-sufficiency.
+
+HOST 1: I love that. Okay, from practical to pure joy: a Raspberry Pi CRT Tracks Spacecraft in a Retro Mission Console.
+
+HOST 2: Yes! A Raspberry Pi, even a 3B+ is enough, pulls live spacecraft telemetry and displays it on an old CRT monitor with a full-on mission control aesthetic.
+
+HOST 1: It’s a Rust application called `mctl` that generates a 640x480 composite video signal. It has multiple retro themes and even an unattended kiosk mode. It’s just creative tech at its best.
+
+HOST 2: So cool. Next up is a more serious application: Build a Raspberry Pi Marine Radar Display.
+
+HOST 1: This is a project called `Exodus Radar`. It uses a Pi to connect to a Raymarine Quantum radar, decode the data, and render a functional marine radar display.
+
+HOST 2: It's all done with Python services, and it can even integrate other data streams like AIS for ship tracking and Signal K for boat sensor data. The project is very clear that it's an experimental aid and not certified navigation equipment, which is a crucial disclaimer.
+
+HOST 1: Absolutely. It’s a serious project showing how makers can interface with expensive, proprietary hardware.
+
+HOST 2: And for our final project, we have a very helpful tutorial: Build an RFID Reader for Raspberry Pi 5.
+
+HOST 1: This is pure community service. It provides an up-to-date guide for using the common RC522 RFID reader with the Pi 5.
+
+HOST 2: The key is that it solves a common problem. Older guides use the `RPi.GPIO` library, which is deprecated. This new guide correctly uses the modern `spidev` and `gpiod` libraries for SPI communication and GPIO control.
+
+HOST 1: It's exactly the kind of practical update people need when new hardware comes out. It teaches the correct, modern way to do basic hardware interfacing on the Pi 5.
+
+HOST 2: And that wraps up another packed issue. So many great builds this week.
+
+HOST 1: It really was. From tiny AI to Kubernetes on an ESP32, there’s something for everyone.
+
+HOST 2: To see all these projects and get more like them every Sunday, subscribe to the free weekly TinkerNews newsletter.
+
+HOST 1: Just head over to tinkernews.com — that's t-i-n-k-e-r-n-e-w-s dot com — so every Sunday's issue lands right in your inbox. Thanks for listening.
