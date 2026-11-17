@@ -1,0 +1,175 @@
+HOST 1: Welcome to the TinkerNews podcast, the audio edition of TinkerNews, a free weekly newsletter that curates the best DIY electronics builds on the web, right from tinkernews.com.
+
+HOST 2: That's right. We've got another packed issue for you this week, Issue #62. Lots of amazing projects. Ready to dive into DIY Electronics?
+
+HOST 1: Let's do it. First up is a project that really pushes the boundary of 'how cheap can you go?' It's a handheld game console, powered by a coin-cell battery, built for about ten dollars.
+
+HOST 2: A ten-dollar-class console! And the core of it is a RISC-V chip, the CH32V003, that costs around ten cents. Ten cents!
+
+HOST 1: Exactly. It's built on a custom PCB with a tiny monochrome screen, simple controls, and a 3D-printed case. It's a masterclass in cost optimization and minimalist hardware design.
+
+HOST 2: It really makes you think about the practical limits, right? Like how long can a coin-cell really last, and what are the trade-offs when you're using these ultra-cheap components.
+
+HOST 1: From ultra-cheap to ultra-efficient. The next build is a low-power bike computer. This one isn't about the cheapest parts, but the smartest software.
+
+HOST 2: It uses an ESP32-S3. But the creator prioritized software efficiency over just raw power. Things like damage-based rendering, where you only redraw the parts of the screen that actually change.
+
+HOST 1: And simplified vector maps, cached map tiles... the whole strategy is to keep the wake times as short as possible. It's a great lesson in low-power design for battery-operated devices with displays.
+
+HOST 2: It really shows that clever code can be more important for battery life than just throwing a faster processor at the problem.
+
+HOST 1: And for our last DIY build, we're going back in time. It's called PerryFi 2, and it gives an old Amstrad PCW computer Wi-Fi.
+
+HOST 2: I love these retro-modern bridging projects. How does it work?
+
+HOST 1: It's a clever dual-microcontroller design. A Raspberry Pi Pico handles the hardware serial communication with the PCW's original expansion interface.
+
+HOST 2: And let me guess, an ESP chip for the Wi-Fi?
+
+HOST 1: You got it. An ESP-12F provides the Wi-Fi, using SLIP and PPP protocols. It's a perfect example of using two different, inexpensive chips to tackle a complex problem—one for the legacy hardware, and one for modern networking.
+
+HOST 2: Awesome. Okay, let's move on to 3D Printing. The first one here is fascinating. It’s a mod that turns a stock Ender-3 V3 SE printer into an electromagnetic fault injection rig.
+
+HOST 1: Right, an EMFI testing rig. It uses a 3D-printed mount to hold a PicoEMP probe on the printer's tool head. Then you use the printer's precise motion control system to automate security testing on a target chip.
+
+HOST 2: So you're basically using G-code coordinates for precise probe positioning over a chip. You control it via USB serial with Python wrappers. It turns a 3D printer into specialized hardware security equipment.
+
+HOST 1: A great reminder about high-voltage safety with these things, of course. But what a brilliant way to repurpose a common tool.
+
+HOST 2: Definitely. The next one is less about repurposing and more about convenience. It’s a desktop utility called Bambu Bar.
+
+HOST 1: This is for anyone with a Bambu Lab 3D printer. It puts the printer's status right in your Mac's menu bar or system tray. It communicates over the local network, not the cloud.
+
+HOST 2: Which is a huge plus. It shows print progress, nozzle and bed temperatures, filament info, errors, and can even show the camera view for multiple printers.
+
+HOST 1: It’s a perfect example of a small, focused app that uses a device's local API to make the user experience so much better.
+
+HOST 2: Alright, let's talk Arduino. First up, a project that turns an Arduino into a self-contained computer running BASIC.
+
+HOST 1: Yes, it's called Tiny Basic. It has an in-hardware editor, so you can write and run programs directly on the Arduino through a serial terminal. No need to recompile and upload from a PC for every little change.
+
+HOST 2: It even has commands for hardware I/O. It really brings back that immediate, interactive feel of early home computers. A fantastic educational tool.
+
+HOST 1: From retro computing to retro-automotive. The next project is an Arduino scanner for 1991 to 1995 Jeep computers.
+
+HOST 2: Oh, that's a great niche. Those Jeeps use a pre-OBD-II protocol, right?
+
+HOST 1: Correct. It's a proprietary protocol called SCI, or Serial Communications Interface. This project uses an Arduino Nano, which costs around three dollars, wired to the diagnostic connector.
+
+HOST 2: And a companion Python script on a laptop acts as the scanner interface, showing fault codes and live data. This is what it's all about—empowering owners to do diagnostics that would otherwise require rare, expensive tools.
+
+HOST 1: Totally. And the last Arduino project is the ExcaliPad, a custom USB-C keyboard and game controller on a single PCB.
+
+HOST 2: The key here is the chip: an ATmega32U4. It has native USB capabilities, so it can be programmed to act as a standard USB HID device—a keyboard, a gamepad, you name it.
+
+HOST 1: Exactly. It has tactile buttons and a two-axis thumb joystick. Because it's based on the ATmega32U4, it's compatible with the whole Arduino ecosystem. You could use it for a macro pad, an accessibility tool, anything. A really versatile building block.
+
+HOST 2: Speaking of versatile chips, let's move to the ESP32 section. And wow, this first one is a showstopper. Someone got an ESP32 to run a complete IBM PC/XT.
+
+HOST 1: A complete, functional IBM compatible on a single postcard-sized board! The magic is in the ESP32's dual-core architecture. One core is dedicated to generating the VGA video signal timing.
+
+HOST 2: And the other core handles the 8086 CPU emulation. The board has physical VGA and PS/2 ports, a microSD slot to emulate a hard drive running DOS, and even audio out.
+
+HOST 1: It's just a masterwork of retro-computing and real-time firmware development. It really shows the sheer power of a modern, cheap microcontroller.
+
+HOST 2: Incredible. From a full computer to a full-on light show. Next is an ESP32 Arcade Matrix using HUB75 panels.
+
+HOST 1: This is a system for driving those big RGB LED matrix panels. The ESP32 controls the panels, a MicroSD card stores media files, and the Wi-Fi connects to things like weather APIs, MQTT brokers, or Home Assistant.
+
+HOST 2: And the brief notes that using a more powerful ESP32-S3 lets you drive even larger panels. This seems like a perfect firmware base for a custom arcade marquee or a smart home info dashboard.
+
+HOST 1: It's very cool. Now, from driving many LEDs to driving many different *types* of displays. This next project is a unified ESP-IDF firmware base designed for multiple e-paper display families.
+
+HOST 2: That solves a huge headache. You don't have to write bespoke code for every different display. How does it work?
+
+HOST 1: The architecture is really smart. The device wakes from deep sleep, connects to Wi-Fi, fetches a pre-rendered image from a server, refreshes the screen, and goes back to sleep. All the device-specific code is consolidated.
+
+HOST 2: So it’s a reusable, power-efficient firmware structure. That's super valuable for anyone making low-power display projects.
+
+HOST 1: And one more for the ESP32. This is a software kit called the Hermes Gadget SDK. It lets a Linux host push dashboard widgets to an ESP32-based voice gadget.
+
+HOST 2: So the ESP32 becomes more of a thin-client display? The heavy lifting is done on the host computer?
+
+HOST 1: Exactly. The host can publish widgets—values, progress bars, lists—to the gadget's screen. The system even handles gestures, fallback tiles if the connection is lost, and voice command interruptions. A really powerful architecture for smart home displays.
+
+HOST 2: Very cool. Let's get into IoT. And this is a fun way to start: a hands-on LoRa link, but it's entirely in a web browser.
+
+HOST 1: It's a simulation of a point-to-point LoRa link between two virtual Arduino Unos with SX1278 radio modules. You can inspect the wiring, see the code, and watch the parameters.
+
+HOST 2: And as you move the virtual radios apart, you can see the RSSI—the signal strength—change. You can even test what happens when you mismatch settings like the spreading factor. It's a zero-cost way for a beginner to learn LoRa fundamentals.
+
+HOST 1: From a simulated LoRa node to a very real one. Next is a solar-powered LoRaWAN sensor node for agricultural monitoring.
+
+HOST 2: The Green Dot Board. This is a complete blueprint. It's built around an RP2040 and a LoRa-E5 module for the LoRaWAN connectivity.
+
+HOST 1: It manages power from both a solar panel and a LiPo battery. The firmware is MicroPython, and it reads temperature and humidity sensors. It even has an RS485 interface for connecting sensors over longer wires.
+
+HOST 2: This is the real deal for an off-grid IoT sensor. It combines power management, a popular MCU, long-range comms, and an industry-standard sensor interface.
+
+HOST 1: Okay, this next one is a theme I love. It's a local ESP32 gateway for controlling a Wallbox EV charger, completely bypassing the cloud.
+
+HOST 2: De-clouding! I love it. So the ESP32 connects to the charger using Bluetooth Low Energy.
+
+HOST 1: Right. And then it connects to your local Wi-Fi and acts as a bridge, exposing control via MQTT and integrating with Home Assistant. It even has its own local web dashboard and supports over-the-air updates. All on a roughly $15 ESP32 board.
+
+HOST 2: This is exactly what makers want. Full local control, so it works even if the company's servers go down. It's all about privacy and reliability.
+
+HOST 1: And that's a perfect lead-in to the last IoT "project," which is more of a design philosophy: building smart home devices that work offline.
+
+HOST 2: The "local-first" approach. The idea is to use an ESP8266 or ESP32 running Tasmota firmware, communicating on the local network with MQTT.
+
+HOST 1: And a local server like Home Assistant handles all the logic. The internet is only for optional stuff like remote access, but the core functions work perfectly offline. It’s a fundamental design pattern for building a better, more reliable smart home.
+
+HOST 2: Absolutely. Okay, on to Raspberry Pi. First up, TelltaleDNS. This is a DNS server, written in Rust, that runs on a Pi.
+
+HOST 1: And it lets you intercept, log, and filter DNS requests from every device on your home network. You can set up custom rules based on the device making the request.
+
+HOST 2: So you get granular control for ad-blocking, parental controls, or blocking telemetry from IoT devices. It’s a powerful, self-hosted tool for network visibility.
+
+HOST 1: From network security to personal security. RS-Key is a project that turns a Raspberry Pi RP2350 into a multi-protocol hardware security key.
+
+HOST 2: A DIY YubiKey! It runs firmware written in Rust and can handle passkeys with FIDO2, SSH, Git commit signing, smart-card applications, and one-time passwords.
+
+HOST 1: And there's a version with a touchscreen so the PIN entry and approval happen physically on the device itself for higher security. It's a fantastic deep dive into modern security protocols.
+
+HOST 2: And a great showcase for that new RP2350 chip. The last Pi project is very specific: a recovery method for the M-VAVE FM-1 audio device.
+
+HOST 1: This is pure hardware hacking. It uses a Raspberry Pi Pico 2 W as a programmer to safely access the device's mask-ROM bootloader.
+
+HOST 2: The process sounds meticulous—comparing firmware dumps, limiting writes to only the application area to avoid bricking it, and verifying the writes. A great guide for anyone trying to recover or modify tricky consumer electronics.
+
+HOST 1: Alright, last section: Robotics. And we're starting with another fantastic browser-based simulation. This one is for controlling a four-servo robot arm.
+
+HOST 2: It simulates an Arduino Uno, two thumb joysticks, and the arm itself. It's a testbed for developing the control code, letting you work on concepts like rate-based control, setting angle limits, and handling joystick dead-bands.
+
+HOST 1: It's another one of those projects that lets you debug all the logic in a safe, virtual environment before you have to deal with real-world physics and power supplies.
+
+HOST 2: And speaking of simulations, the next one takes it a step further. It's a simulated MeArm robot that plays Connect Four.
+
+HOST 1: This one uses the PyBullet physics engine to handle gravity and collisions. The code is in Python, and the robot uses a Minimax algorithm to choose its moves.
+
+HOST 2: It connects robotics with AI and physics simulation. It’s a great way to learn professional-grade tools like PyBullet and classic game theory AI.
+
+HOST 1: Okay, time to leave the simulation. The next project is a *physical*, webcam-guided MeArm that sorts colored balls.
+
+HOST 2: A classic pick-and-place project! It uses a standard webcam for vision. A Python script processes the camera feed to find the balls and calculate their positions in millimeters.
+
+HOST 1: That coordinate data is then sent to an Arduino, which controls the four SG90 servos of the 3D-printed MeArm. It's that common robotics architecture: a PC for the complex vision task, and a microcontroller for the real-time hardware control.
+
+HOST 2: I love that progression, from simulation to a real physical robot. And this last one is the culmination. It's a mobile robot that finds and collects trash.
+
+HOST 1: This is a really sophisticated build. It's on a Traxxas RC car chassis with a Raspberry Pi 5 as the brain. The key is its multi-sensor approach.
+
+HOST 2: Sensor fusion! It uses an OAK-D Lite camera for object detection—to see *what* the trash is.
+
+HOST 1: And it uses an LD19 LiDAR sensor for distance measurement—to know exactly *where* it is, so it can stop precisely 0.16 meters away.
+
+HOST 2: Then a robotic arm, an SO101, does the final pickup. By using different sensors for "what" and "where," the control task for the Pi 5 becomes much simpler. It's a fantastic architecture for a real-world autonomous robot.
+
+HOST 1: What a fantastic set of builds. That covers everything in Issue #62. So many great ideas in there.
+
+HOST 2: It really does. And if you want to get links to all these projects and see new ones like them every single week, there's an easy way to do that.
+
+HOST 1: That's right. Just subscribe to the free weekly TinkerNews newsletter at tinkernews dot com. That’s t-i-n-k-e-r-n-e-w-s dot com, so every Sunday's issue lands right in your inbox.
+
+HOST 2: Thanks for listening. We'll see you next time.
