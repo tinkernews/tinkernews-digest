@@ -2,7 +2,7 @@
 
 Curated DIY electronics builds: open source digest of the TinkerNews newsletter
 
-**Stats:** 16 issues · 243 builds
+**Stats:** 17 issues · 271 builds
 
 ## Issues
 
@@ -24,5 +24,6 @@ Curated DIY electronics builds: open source digest of the TinkerNews newsletter
 | 60 | 2026-11-02 | Pocket Reflex, ISS Tracking, and E-Paper Adventures | 22 | [60-pocket-reflex-iss-tracking-and-e-paper-adventures.md](issues/60-pocket-reflex-iss-tracking-and-e-paper-adventures.md) |
 | 61 | 2026-11-09 | XGO Duck, Tiny Game Worlds, and a Local AI Thermostat | 27 | [61-xgo-duck-tiny-game-worlds-and-a-local-ai-thermostat.md](issues/61-xgo-duck-tiny-game-worlds-and-a-local-ai-thermostat.md) |
 | 62 | 2026-11-16 | Tiny BASIC, an ESP32 PC XT, and a Trash Collecting Robot | 27 | [62-tiny-basic-an-esp32-pc-xt-and-a-trash-collecting-robot.md](issues/62-tiny-basic-an-esp32-pc-xt-and-a-trash-collecting-robot.md) |
+| 63 | 2026-11-24 | Momo the Pi Puppy, a Pico Macintosh, and a Wi Fi Floppy Archive | 28 | [63-momo-the-pi-puppy-a-pico-macintosh-and-a-wi-fi-floppy.md](issues/63-momo-the-pi-puppy-a-pico-macintosh-and-a-wi-fi-floppy.md) |
 
 Newsletter: [tinkernews.com](https://www.tinkernews.com) · Free bench tools: [https://www.tinkernews.com/tools](https://www.tinkernews.com/tools)
